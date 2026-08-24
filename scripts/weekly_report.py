@@ -14,8 +14,10 @@ Colonne del report:
   4. Presenze settimana (lun-dom)
   5. Incasso weekend (ven-dom)
   6. Presenze weekend (ven-dom)
-  7. Incasso totale cumulato (da quando il tracker raccoglie dati — NON
-     l'incasso totale dall'uscita del film, di cui non abbiamo storico)
+  7. Incasso totale dall'uscita in sala — preso direttamente dal campo
+     "Incasso al <data>" che Cinetel pubblica per ogni film (valore
+     dell'ultimo giorno disponibile nella settimana), NON un cumulato
+     calcolato da noi.
 
 Richiede due secret d'ambiente per l'invio SMTP via Gmail:
   GMAIL_ADDRESS       -> l'indirizzo gmail mittente (e destinatario)
@@ -75,6 +77,8 @@ def build_report(rows, week_start: date, week_end: date):
         "incasso_weekend": 0.0,
         "presenze_weekend": 0,
         "incasso_totale": 0.0,
+        "presenze_totale": 0,
+        "incasso_totale_data": None,  # data del valore totale più recente usato
         "giorni_settimana_trovati": set(),
     })
 
@@ -86,12 +90,13 @@ def build_report(rows, week_start: date, week_end: date):
         titolo = r["titolo"]
         incasso = float(r["incasso_eur"]) if r["incasso_eur"] not in ("", None) else 0.0
         presenze = int(r["presenze"]) if r["presenze"] not in ("", None) else 0
+        incasso_tot_raw = r.get("incasso_totale_eur")
+        presenze_tot_raw = r.get("presenze_totale")
+        incasso_tot = float(incasso_tot_raw) if incasso_tot_raw not in ("", None) else None
+        presenze_tot = int(presenze_tot_raw) if presenze_tot_raw not in ("", None) else None
 
         entry = per_film[titolo]
         entry["distribuzione"] = r["distribuzione"] or entry["distribuzione"]
-
-        # cumulato dall'inizio del tracking (tutte le righe disponibili)
-        entry["incasso_totale"] += incasso
 
         if week_start <= d <= week_end:
             entry["incasso_settimana"] += incasso
@@ -100,6 +105,16 @@ def build_report(rows, week_start: date, week_end: date):
             if d >= weekend_start:
                 entry["incasso_weekend"] += incasso
                 entry["presenze_weekend"] += presenze
+
+            # "Incasso totale dall'uscita" pubblicato da Cinetel: prendiamo
+            # il valore del giorno più recente disponibile nella settimana
+            # (non lo sommiamo: è già un cumulato calcolato da Cinetel).
+            if incasso_tot is not None and (
+                entry["incasso_totale_data"] is None or d > entry["incasso_totale_data"]
+            ):
+                entry["incasso_totale"] = incasso_tot
+                entry["presenze_totale"] = presenze_tot or 0
+                entry["incasso_totale_data"] = d
 
     # Teniamo solo i film che hanno almeno un giorno di dati nella settimana
     result = [
@@ -164,7 +179,7 @@ def render_html(report, week_start, week_end, covered_days):
             <th style="padding:6px 10px;border:1px solid #1f3a5f;">Presenze settimana</th>
             <th style="padding:6px 10px;border:1px solid #1f3a5f;">Incasso weekend (ven-dom)</th>
             <th style="padding:6px 10px;border:1px solid #1f3a5f;">Presenze weekend (ven-dom)</th>
-            <th style="padding:6px 10px;border:1px solid #1f3a5f;">Incasso totale cumulato*</th>
+            <th style="padding:6px 10px;border:1px solid #1f3a5f;">Incasso totale dall'uscita*</th>
           </tr>
         </thead>
         <tbody>
@@ -172,8 +187,9 @@ def render_html(report, week_start, week_end, covered_days):
         </tbody>
       </table>
       <p style="font-size:11px;color:#888;margin-top:12px;">
-        * "Incasso totale cumulato" = somma di tutti i giorni raccolti dal tracker da quando è attivo,
-        non l'incasso totale del film dalla sua uscita in sala (di cui non abbiamo storico pregresso).
+        * "Incasso totale dall'uscita" è il dato ufficiale pubblicato da Cinetel per ogni film
+        (colonna "Incasso al [data]"), preso al giorno più recente disponibile in questa settimana —
+        non un cumulato calcolato da noi.
       </p>
     </body></html>
     """
