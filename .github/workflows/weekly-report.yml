@@ -1,0 +1,31 @@
+name: Cinetel weekly report
+
+on:
+  schedule:
+    # 06:30 UTC ogni lunedì = 08:30 ora italiana in CEST (UTC+2, in vigore
+    # da fine marzo a fine ottobre). In inverno (CET, UTC+1) l'orario reale
+    # slitta di un'ora, alle 09:30 — vedi nota nel README se vuoi un orario
+    # fisso tutto l'anno.
+    - cron: "30 6 * * 1"
+  workflow_dispatch: {}  # per testarlo a mano da GitHub, senza aspettare lunedì
+
+permissions:
+  contents: read
+
+jobs:
+  weekly-report:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Send weekly report email
+        env:
+          GMAIL_ADDRESS: ${{ secrets.GMAIL_ADDRESS }}
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+        run: python scripts/weekly_report.py
