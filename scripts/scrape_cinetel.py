@@ -3,7 +3,9 @@
 Cinetel Box Office daily scraper.
 
 Scarica la pagina pubblica https://cinetel.it/homepage (box office giornaliero
-del mercato cinematografico italiano), estrae la tabella dei film e salva:
+del mercato cinematografico italiano), estrae la classifica e salva SOLO i
+primi TOP_N film (di default 10, la "top ten") — gli eventuali film oltre la
+decima posizione vengono scartati:
 
   - data/raw/<data-riferimento>.json   -> snapshot grezzo del giorno
   - data/cinetel_boxoffice.csv         -> storico cumulativo (append, senza duplicati)
@@ -11,10 +13,16 @@ del mercato cinematografico italiano), estrae la tabella dei film e salva:
 Il sito è una single-page app che renderizza i dati via JavaScript, quindi
 uso Playwright (browser headless reale) invece di una semplice richiesta HTTP.
 
-L'estrazione si basa sulle ETICHETTE di testo visibili ("Pos.", "Titolo",
-"Distribuzione", "Incasso", "Presenze") invece che su classi CSS, perché le
-classi generate da framework come Angular Material cambiano spesso mentre le
-etichette italiane sono stabili nel tempo.
+La tabella reale (verificata su una run effettiva) ha, per ogni film, queste
+colonne in quest'ordine: Pos., Titolo, Prima Programmazione, Nazione,
+Distribuzione, Incasso (del giorno), Presenze (del giorno), Incasso al
+<data> (cumulato dall'uscita in sala), Presenze al <data> (cumulato).
+L'estrazione legge il testo della pagina riga per riga e riconosce un nuovo
+film quando trova: numero di posizione, poi titolo, poi una data
+gg/mm/aaaa (prima programmazione), poi un codice nazione in maiuscolo, ecc.
+Questo è più robusto delle classi CSS (che framework come Angular possono
+rigenerare) perché si basa sul formato e sull'ordine dei dati, che Cinetel
+mantiene stabile.
 """
 
 import csv
@@ -27,11 +35,24 @@ from pathlib import Path
 from playwright.sync_api import sync_playwright
 
 URL = "https://cinetel.it/homepage"
+TOP_N = 10  # teniamo solo i primi 10 film in classifica (top ten), non l'intera lista
 ROOT = Path(__file__).resolve().parent.parent
 RAW_DIR = ROOT / "data" / "raw"
 CSV_PATH = ROOT / "data" / "cinetel_boxoffice.csv"
 
-FIELDS = ["data_riferimento", "pos", "titolo", "distribuzione", "incasso_eur", "presenze", "scraped_at_utc"]
+FIELDS = [
+    "data_riferimento",
+    "pos",
+    "titolo",
+    "prima_programmazione",
+    "nazione",
+    "distribuzione",
+    "incasso_eur",
+    "presenze",
+    "incasso_totale_eur",
+    "presenze_totale",
+    "scraped_at_utc",
+]
 
 
 def parse_euro(value: str) -> float:
@@ -54,40 +75,49 @@ def parse_int_it(value: str):
 
 def extract_rows(page_text: str):
     """
-    Il testo della pagina contiene blocchi ripetuti tipo:
+    Il testo della pagina contiene una riga di intestazione seguita da
+    blocchi ripetuti, uno per film, del tipo (verificato su una run reale):
 
-        Pos.
         1
-        Titolo
         OCEANIA (MOANA)
-        Distribuzione
+        19/08/2026
+        USA
         WALT DISNEY S.M.P. ITALIA
-        Incasso
         € 885.276
-        Presenze
         109.188
-        Più info
+        € 5.091.982
+        650.830
 
-    Li estraiamo con una regex non-greedy sull'intero testo della pagina.
+    cioè: Pos., Titolo, Prima Programmazione (gg/mm/aaaa), Nazione,
+    Distribuzione, Incasso del giorno, Presenze del giorno, Incasso totale
+    dall'uscita, Presenze totali dall'uscita.
     """
     pattern = re.compile(
-        r"Pos\.\s*\n\s*(\d+)\s*\n"
-        r"Titolo\s*\n\s*(.+?)\s*\n"
-        r"Distribuzione\s*\n\s*(.+?)\s*\n"
-        r"Incasso\s*\n\s*€?\s*([\d.,]+)\s*\n"
-        r"Presenze\s*\n\s*([\d.,]+)",
+        r"^(\d+)\r?\n"                    # pos
+        r"(.+?)\r?\n"                     # titolo
+        r"(\d{2}/\d{2}/\d{4})\r?\n"       # prima programmazione
+        r"([A-Za-z]{2,4})\r?\n"           # nazione (codice)
+        r"(.+?)\r?\n"                     # distribuzione
+        r"€\s*([\d.,]+)\r?\n"             # incasso del giorno
+        r"([\d.,]+)\r?\n"                 # presenze del giorno
+        r"€\s*([\d.,]+)\r?\n"             # incasso totale dall'uscita
+        r"([\d.,]+)",                     # presenze totali dall'uscita
         re.MULTILINE,
     )
     rows = []
     for m in pattern.finditer(page_text):
-        pos, titolo, distribuzione, incasso, presenze = m.groups()
+        pos, titolo, prima_progr, nazione, distribuzione, incasso, presenze, incasso_tot, presenze_tot = m.groups()
         rows.append(
             {
                 "pos": int(pos),
                 "titolo": titolo.strip(),
+                "prima_programmazione": prima_progr.strip(),
+                "nazione": nazione.strip(),
                 "distribuzione": distribuzione.strip(),
                 "incasso_eur": parse_euro(incasso),
                 "presenze": parse_int_it(presenze),
+                "incasso_totale_eur": parse_euro(incasso_tot),
+                "presenze_totale": parse_int_it(presenze_tot),
             }
         )
     return rows
@@ -141,9 +171,13 @@ def append_csv(rows, reference_date, scraped_at):
                     "data_riferimento": reference_date,
                     "pos": r["pos"],
                     "titolo": r["titolo"],
+                    "prima_programmazione": r["prima_programmazione"],
+                    "nazione": r["nazione"],
                     "distribuzione": r["distribuzione"],
                     "incasso_eur": r["incasso_eur"],
                     "presenze": r["presenze"],
+                    "incasso_totale_eur": r["incasso_totale_eur"],
+                    "presenze_totale": r["presenze_totale"],
                     "scraped_at_utc": scraped_at,
                 }
             )
@@ -157,6 +191,7 @@ def main():
 
     reference_date = extract_reference_date(text)
     rows = extract_rows(text)
+    rows = [r for r in rows if r["pos"] <= TOP_N]  # solo la top ten, non la lista completa
 
     if not reference_date or not rows:
         print("ERRORE: non sono riuscito a trovare dati nella pagina.", file=sys.stderr)
