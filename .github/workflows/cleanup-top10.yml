@@ -1,0 +1,39 @@
+name: Cinetel cleanup (una tantum)
+
+# Rimuove dal CSV le righe con posizione oltre la 10, rimaste dai run
+# eseguiti prima di introdurre il filtro TOP_N. Va lanciato manualmente
+# UNA VOLTA da GitHub Actions ("Run workflow"); dopo puoi anche cancellare
+# questo file, non serve più.
+
+on:
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  cleanup:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Run cleanup
+        run: python scripts/cleanup_top10.py
+
+      - name: Commit and push cleaned data
+        run: |
+          git config user.name "cinetel-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/
+          if git diff --cached --quiet; then
+            echo "Nessuna modifica da salvare."
+          else
+            git commit -m "Pulizia CSV: solo top 10"
+            git push
+          fi
