@@ -1,0 +1,226 @@
+{
+  "data_riferimento": "2026-09-08",
+  "scraped_at_utc": "2026-09-09T10:02:10+00:00",
+  "film": [
+    {
+      "pos": 1,
+      "titolo": "COYOTE VS ACME",
+      "prima_programmazione": "02/09/2026",
+      "nazione": "GBR",
+      "distribuzione": "LUCKY RED DISTRIBUZIONE",
+      "incasso_eur": 174307.0,
+      "presenze": 24484,
+      "incasso_totale_eur": 1827295.0,
+      "presenze_totale": 242930
+    },
+    {
+      "pos": 2,
+      "titolo": "ODISSEA",
+      "prima_programmazione": "16/07/2026",
+      "nazione": "GBR",
+      "distribuzione": "UNIVERSAL",
+      "incasso_eur": 130800.0,
+      "presenze": 15042,
+      "incasso_totale_eur": 56209028.0,
+      "presenze_totale": 6675580
+    },
+    {
+      "pos": 3,
+      "titolo": "OCEANIA (MOANA)",
+      "prima_programmazione": "19/08/2026",
+      "nazione": "USA",
+      "distribuzione": "WALT DISNEY S.M.P. ITALIA",
+      "incasso_eur": 109421.0,
+      "presenze": 15117,
+      "incasso_totale_eur": 10363206.0,
+      "presenze_totale": 1348015
+    },
+    {
+      "pos": 4,
+      "titolo": "SPIDER-MAN: BRAND NEW DAY",
+      "prima_programmazione": "29/07/2026",
+      "nazione": "USA",
+      "distribuzione": "EAGLE PICTURES",
+      "incasso_eur": 77540.0,
+      "presenze": 10035,
+      "incasso_totale_eur": 37810761.0,
+      "presenze_totale": 4696776
+    },
+    {
+      "pos": 5,
+      "titolo": "THE DOG STARS - LE STELLE DOPO LA FINE",
+      "prima_programmazione": "26/08/2026",
+      "nazione": "USA",
+      "distribuzione": "WALT DISNEY S.M.P. ITALIA",
+      "incasso_eur": 38348.0,
+      "presenze": 5364,
+      "incasso_totale_eur": 1205853.0,
+      "presenze_totale": 158505
+    },
+    {
+      "pos": 6,
+      "titolo": "INSIDIOUS: FUORI DALL'ALTROVE",
+      "prima_programmazione": "19/08/2026",
+      "nazione": "USA",
+      "distribuzione": "EAGLE PICTURES",
+      "incasso_eur": 20340.0,
+      "presenze": 2741,
+      "incasso_totale_eur": 1830691.0,
+      "presenze_totale": 229059
+    },
+    {
+      "pos": 7,
+      "titolo": "ONE NIGHT ONLY - QUANDO TUTTO È POSSIBILE",
+      "prima_programmazione": "26/08/2026",
+      "nazione": "USA",
+      "distribuzione": "UNIVERSAL",
+      "incasso_eur": 15967.0,
+      "presenze": 2168,
+      "incasso_totale_eur": 530406.0,
+      "presenze_totale": 69908
+    },
+    {
+      "pos": 8,
+      "titolo": "FERRARI 250 GTO – L'AUTO DI MAURO FORGHIERI CHE SALVO' MARANELLO",
+      "prima_programmazione": "07/09/2026",
+      "nazione": "USA",
+      "distribuzione": "ADLER ENTERTAINMENT",
+      "incasso_eur": 14444.0,
+      "presenze": 1650,
+      "incasso_totale_eur": 29196.0,
+      "presenze_totale": 3323
+    },
+    {
+      "pos": 9,
+      "titolo": "IL MALLOPPO",
+      "prima_programmazione": "03/09/2026",
+      "nazione": "ITA",
+      "distribuzione": "VISION DISTRIBUTION",
+      "incasso_eur": 12233.0,
+      "presenze": 1965,
+      "incasso_totale_eur": 122930.0,
+      "presenze_totale": 19454
+    },
+    {
+      "pos": 10,
+      "titolo": "FAMMI IL PIACERE (POUR LE PLAISIR)",
+      "prima_programmazione": "03/09/2026",
+      "nazione": "FRA",
+      "distribuzione": "EAGLE PICTURES",
+      "incasso_eur": 10475.0,
+      "presenze": 1655,
+      "incasso_totale_eur": 131217.0,
+      "presenze_totale": 20778
+    },
+    {
+      "pos": 1,
+      "titolo": "COYOTE VS ACME",
+      "prima_programmazione": "02/09/2026",
+      "nazione": "GBR",
+      "distribuzione": "LUCKY RED DISTRIBUZIONE",
+      "incasso_eur": 334846.0,
+      "presenze": 47145,
+      "incasso_totale_eur": 1827295.0,
+      "presenze_totale": 242930
+    },
+    {
+      "pos": 2,
+      "titolo": "ODISSEA",
+      "prima_programmazione": "16/07/2026",
+      "nazione": "GBR",
+      "distribuzione": "UNIVERSAL",
+      "incasso_eur": 261889.0,
+      "presenze": 29872,
+      "incasso_totale_eur": 56209028.0,
+      "presenze_totale": 6675580
+    },
+    {
+      "pos": 3,
+      "titolo": "OCEANIA (MOANA)",
+      "prima_programmazione": "19/08/2026",
+      "nazione": "USA",
+      "distribuzione": "WALT DISNEY S.M.P. ITALIA",
+      "incasso_eur": 205412.0,
+      "presenze": 28380,
+      "incasso_totale_eur": 10363206.0,
+      "presenze_totale": 1348015
+    },
+    {
+      "pos": 4,
+      "titolo": "SPIDER-MAN: BRAND NEW DAY",
+      "prima_programmazione": "29/07/2026",
+      "nazione": "USA",
+      "distribuzione": "EAGLE PICTURES",
+      "incasso_eur": 145964.0,
+      "presenze": 18792,
+      "incasso_totale_eur": 37810761.0,
+      "presenze_totale": 4696776
+    },
+    {
+      "pos": 5,
+      "titolo": "THE DOG STARS - LE STELLE DOPO LA FINE",
+      "prima_programmazione": "26/08/2026",
+      "nazione": "USA",
+      "distribuzione": "WALT DISNEY S.M.P. ITALIA",
+      "incasso_eur": 69814.0,
+      "presenze": 9620,
+      "incasso_totale_eur": 1205853.0,
+      "presenze_totale": 158505
+    },
+    {
+      "pos": 6,
+      "titolo": "INSIDIOUS: FUORI DALL'ALTROVE",
+      "prima_programmazione": "19/08/2026",
+      "nazione": "USA",
+      "distribuzione": "EAGLE PICTURES",
+      "incasso_eur": 43502.0,
+      "presenze": 5759,
+      "incasso_totale_eur": 1830691.0,
+      "presenze_totale": 229059
+    },
+    {
+      "pos": 7,
+      "titolo": "FERRARI 250 GTO – L'AUTO DI MAURO FORGHIERI CHE SALVO' MARANELLO",
+      "prima_programmazione": "07/09/2026",
+      "nazione": "USA",
+      "distribuzione": "ADLER ENTERTAINMENT",
+      "incasso_eur": 29196.0,
+      "presenze": 3323,
+      "incasso_totale_eur": 29196.0,
+      "presenze_totale": 3323
+    },
+    {
+      "pos": 8,
+      "titolo": "ONE NIGHT ONLY - QUANDO TUTTO È POSSIBILE",
+      "prima_programmazione": "26/08/2026",
+      "nazione": "USA",
+      "distribuzione": "UNIVERSAL",
+      "incasso_eur": 27995.0,
+      "presenze": 3751,
+      "incasso_totale_eur": 530406.0,
+      "presenze_totale": 69908
+    },
+    {
+      "pos": 9,
+      "titolo": "IL MALLOPPO",
+      "prima_programmazione": "03/09/2026",
+      "nazione": "ITA",
+      "distribuzione": "VISION DISTRIBUTION",
+      "incasso_eur": 23604.0,
+      "presenze": 3763,
+      "incasso_totale_eur": 122930.0,
+      "presenze_totale": 19454
+    },
+    {
+      "pos": 10,
+      "titolo": "THE MORTUARY ASSISTANT",
+      "prima_programmazione": "03/09/2026",
+      "nazione": "USA",
+      "distribuzione": "MADISON PICTURES",
+      "incasso_eur": 21135.0,
+      "presenze": 2686,
+      "incasso_totale_eur": 74595.0,
+      "presenze_totale": 9385
+    }
+  ]
+}
