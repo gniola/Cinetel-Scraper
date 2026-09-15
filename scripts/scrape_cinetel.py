@@ -185,6 +185,37 @@ def append_csv(rows, reference_date, scraped_at):
     return added
 
 
+def validate_rows(rows):
+    """
+    Scarta righe con numeri impossibili, sintomo di un parsing andato storto
+    (es. un cambio di struttura della pagina che disallinea i campi).
+
+    Regola di buon senso: l'incasso/le presenze DI UN GIORNO non possono mai
+    superare l'incasso/le presenze TOTALI dall'uscita in sala dello stesso
+    film (il totale include anche quel giorno, quindi dev'essere sempre >=).
+    Se capita, la riga viene scartata e segnalata su stderr invece di finire
+    silenziosamente nel CSV.
+    """
+    valid = []
+    for r in rows:
+        incasso_tot = r.get("incasso_totale_eur")
+        presenze_tot = r.get("presenze_totale")
+        problemi = []
+        if incasso_tot is not None and r["incasso_eur"] is not None and r["incasso_eur"] > incasso_tot:
+            problemi.append(f"incasso giorno ({r['incasso_eur']}) > incasso totale ({incasso_tot})")
+        if presenze_tot is not None and r["presenze"] is not None and r["presenze"] > presenze_tot:
+            problemi.append(f"presenze giorno ({r['presenze']}) > presenze totali ({presenze_tot})")
+        if problemi:
+            print(
+                f"ATTENZIONE: scarto la riga di '{r['titolo']}' (pos {r['pos']}) — dati incoerenti: "
+                + "; ".join(problemi),
+                file=sys.stderr,
+            )
+            continue
+        valid.append(r)
+    return valid
+
+
 def main():
     scraped_at = datetime.now(timezone.utc).isoformat(timespec="seconds")
     text = fetch_page_text()
@@ -192,6 +223,7 @@ def main():
     reference_date = extract_reference_date(text)
     rows = extract_rows(text)
     rows = [r for r in rows if r["pos"] <= TOP_N]  # solo la top ten, non la lista completa
+    rows = validate_rows(rows)  # scarta righe con numeri impossibili (parsing corrotto)
 
     if not reference_date or not rows:
         print("ERRORE: non sono riuscito a trovare dati nella pagina.", file=sys.stderr)

@@ -12,7 +12,14 @@ giorno, gratuitamente, anche a computer spento.
 
 - `scripts/scrape_cinetel.py` apre la pagina con un browser headless
   (Playwright), legge la tabella del box office ed estrae i dati dal testo
-  visibile della pagina (non da classi CSS, che possono cambiare).
+  visibile della pagina (non da classi CSS, che possono cambiare). Salva
+  solo la **top ten** (i primi 10 film in classifica); quelli oltre la
+  decima posizione vengono scartati. Per cambiare quanti film tenere, modifica
+  la costante `TOP_N` in cima al file.
+- Prima di salvare, `validate_rows()` controlla che i numeri abbiano senso
+  (l'incasso/le presenze di un giorno non possono mai superare il totale
+  dall'uscita in sala) e scarta con un avviso qualsiasi riga con dati
+  incoerenti, invece di salvarla in silenzio nel CSV.
 - `.github/workflows/daily-scrape.yml` esegue lo script ogni giorno alle
   05:30 UTC (06:30/07:30 ora italiana) e salva il risultato direttamente nel
   repository con un commit automatico.
@@ -56,13 +63,13 @@ Ogni lunedì alle **8:30 (ora italiana, CEST)** (`.github/workflows/weekly-repor
 settimana appena conclusa (lunedì-domenica) e invia una email HTML a
 **gabriele.niola@gmail.com** con questa tabella:
 
-| # | Titolo | Distribuzione | Incasso settimana | Presenze settimana | Incasso weekend (ven-dom) | Presenze weekend (ven-dom) | Incasso totale cumulato* |
-|---|--------|----------------|--------------------|---------------------|----------------------------|------------------------------|----------------------------|
+| # | Titolo | Distribuzione | Incasso settimana | Presenze settimana | Incasso weekend (ven-dom) | Presenze weekend (ven-dom) | Incasso totale dall'uscita* |
+|---|--------|----------------|--------------------|---------------------|----------------------------|------------------------------|-------------------------------|
 
-\* "Incasso totale cumulato" è la somma di tutti i giorni raccolti dal tracker
-da quando è attivo — **non** l'incasso totale del film dall'uscita in sala
-(quello richiederebbe uno storico che non abbiamo). Con il passare delle
-settimane questo numero diventerà un vero cumulato storico.
+\* "Incasso totale dall'uscita" è il dato ufficiale che Cinetel pubblica per
+ogni film (colonna "Incasso al [data]" sulla pagina), non un cumulato
+calcolato da noi — quindi è corretto fin dalla prima settimana di utilizzo
+del tracker.
 
 Se in una settimana mancano dei giorni (es. il workflow giornaliero ha fallito
 un giorno), l'email lo segnala in rosso in cima e calcola i totali solo sui
