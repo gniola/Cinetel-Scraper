@@ -123,6 +123,30 @@ def extract_rows(page_text: str):
     return rows
 
 
+def take_first_table(rows):
+    """
+    La pagina contiene più tabelle sovrapposte con la stessa identica
+    struttura (verificato su una run reale: giornaliera, e altre con dati
+    diversi — probabilmente settimanale/weekend/da inizio anno — tutte con
+    posizioni che ripartono da 1). extract_rows() le cattura tutte insieme
+    perché scansiona l'intero testo della pagina.
+
+    Qui teniamo solo la PRIMA tabella: quella con le posizioni che si
+    susseguono in ordine 1, 2, 3, ... senza interruzioni. Appena la
+    sequenza si interrompe (tipicamente perché si ricomincia da 1, cioè
+    inizia una tabella diversa), ci fermiamo. Questo è il modo più robusto
+    per isolare la tabella "Box Office" giornaliera da tutto il resto.
+    """
+    first_table = []
+    expected = 1
+    for r in rows:
+        if r["pos"] != expected:
+            break
+        first_table.append(r)
+        expected += 1
+    return first_table
+
+
 def extract_reference_date(page_text: str):
     """Cerca 'Box Office al 23/08/2026' e ritorna '2026-08-23'."""
     m = re.search(r"Box Office al (\d{2})/(\d{2})/(\d{4})", page_text)
@@ -222,6 +246,7 @@ def main():
 
     reference_date = extract_reference_date(text)
     rows = extract_rows(text)
+    rows = take_first_table(rows)  # scarta le tabelle successive (settimanale/weekend/YTD ecc.)
     rows = [r for r in rows if r["pos"] <= TOP_N]  # solo la top ten, non la lista completa
     rows = validate_rows(rows)  # scarta righe con numeri impossibili (parsing corrotto)
 
