@@ -1,0 +1,116 @@
+{
+  "data_riferimento": "2026-09-15",
+  "scraped_at_utc": "2026-09-16T10:12:57+00:00",
+  "film": [
+    {
+      "pos": 1,
+      "titolo": "COYOTE VS ACME",
+      "prima_programmazione": "02/09/2026",
+      "nazione": "GBR",
+      "distribuzione": "LUCKY RED DISTRIBUZIONE",
+      "incasso_eur": 83489.0,
+      "presenze": 11739,
+      "incasso_totale_eur": 3119377.0,
+      "presenze_totale": 415721
+    },
+    {
+      "pos": 2,
+      "titolo": "ODISSEA",
+      "prima_programmazione": "16/07/2026",
+      "nazione": "GBR",
+      "distribuzione": "UNIVERSAL",
+      "incasso_eur": 78859.0,
+      "presenze": 9395,
+      "incasso_totale_eur": 57270545.0,
+      "presenze_totale": 6792022
+    },
+    {
+      "pos": 3,
+      "titolo": "AMORI & INCANTESIMI 2 (PRACTICAL MAGIC 2)",
+      "prima_programmazione": "10/09/2026",
+      "nazione": "GBR",
+      "distribuzione": "WARNER BROS. ITALIA",
+      "incasso_eur": 45266.0,
+      "presenze": 6533,
+      "incasso_totale_eur": 418987.0,
+      "presenze_totale": 55677
+    },
+    {
+      "pos": 4,
+      "titolo": "PAW PATROL : MISSIONE DINOSAURI",
+      "prima_programmazione": "09/09/2026",
+      "nazione": "CAN",
+      "distribuzione": "EAGLE PICTURES",
+      "incasso_eur": 39161.0,
+      "presenze": 6011,
+      "incasso_totale_eur": 1101418.0,
+      "presenze_totale": 149734
+    },
+    {
+      "pos": 5,
+      "titolo": "OCEANIA (MOANA)",
+      "prima_programmazione": "19/08/2026",
+      "nazione": "USA",
+      "distribuzione": "WALT DISNEY S.M.P. ITALIA",
+      "incasso_eur": 33235.0,
+      "presenze": 4884,
+      "incasso_totale_eur": 11053215.0,
+      "presenze_totale": 1439080
+    },
+    {
+      "pos": 6,
+      "titolo": "OASIS: DON'T LOOK BACK IN ANGER",
+      "prima_programmazione": "10/09/2026",
+      "nazione": "GBR",
+      "distribuzione": "WALT DISNEY S.M.P. ITALIA",
+      "incasso_eur": 33099.0,
+      "presenze": 2759,
+      "incasso_totale_eur": 560928.0,
+      "presenze_totale": 40858
+    },
+    {
+      "pos": 7,
+      "titolo": "MUTINY",
+      "prima_programmazione": "10/09/2026",
+      "nazione": "GBR",
+      "distribuzione": "EAGLE PICTURES",
+      "incasso_eur": 32425.0,
+      "presenze": 4598,
+      "incasso_totale_eur": 369679.0,
+      "presenze_totale": 48296
+    },
+    {
+      "pos": 8,
+      "titolo": "BATMAN (1989) - RIED. 2026",
+      "prima_programmazione": "14/09/2026",
+      "nazione": "USA",
+      "distribuzione": "WARNER BROS. ITALIA",
+      "incasso_eur": 30335.0,
+      "presenze": 3906,
+      "incasso_totale_eur": 54520.0,
+      "presenze_totale": 6980
+    },
+    {
+      "pos": 9,
+      "titolo": "ASSASSINATION CLASSROOM - IL FILM: L'ORA DI TUTTI NOI",
+      "prima_programmazione": "14/09/2026",
+      "nazione": "JPN",
+      "distribuzione": "EAGLE PICTURES",
+      "incasso_eur": 28654.0,
+      "presenze": 3109,
+      "incasso_totale_eur": 55545.0,
+      "presenze_totale": 5923
+    },
+    {
+      "pos": 10,
+      "titolo": "SPIDER-MAN: BRAND NEW DAY",
+      "prima_programmazione": "29/07/2026",
+      "nazione": "USA",
+      "distribuzione": "EAGLE PICTURES",
+      "incasso_eur": 28091.0,
+      "presenze": 3653,
+      "incasso_totale_eur": 38279671.0,
+      "presenze_totale": 4753835
+    }
+  ]
+}
