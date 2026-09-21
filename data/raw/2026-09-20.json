@@ -1,0 +1,94 @@
+{
+  "data_riferimento": "2026-09-20",
+  "scraped_at_utc": "2026-09-21T11:00:03+00:00",
+  "film": [
+    {
+      "pos": 1,
+      "titolo": "RESIDENT EVIL",
+      "prima_programmazione": "17/09/2026",
+      "nazione": "USA",
+      "distribuzione": "EAGLE PICTURES",
+      "incasso_eur": 377558.0,
+      "presenze": 43433,
+      "incasso_totale_eur": 1440852.0,
+      "presenze_totale": 169942
+    },
+    {
+      "pos": 2,
+      "titolo": "CARS: MOTORI RUGGENTI - 20 ANNI",
+      "prima_programmazione": "17/09/2026",
+      "nazione": "USA",
+      "distribuzione": "WALT DISNEY S.M.P. ITALIA",
+      "incasso_eur": 271639.0,
+      "presenze": 32848,
+      "incasso_totale_eur": 834400.0,
+      "presenze_totale": 102478
+    },
+    {
+      "pos": 3,
+      "titolo": "THE INVITE – IL PIACERE È TUTTO NOSTRO",
+      "prima_programmazione": "16/09/2026",
+      "nazione": "USA",
+      "distribuzione": "I WONDER PICTURES",
+      "incasso_eur": 185002.0,
+      "presenze": 24884,
+      "incasso_totale_eur": 716528.0,
+      "presenze_totale": 98956
+    },
+    {
+      "pos": 4,
+      "titolo": "COYOTE VS ACME",
+      "prima_programmazione": "02/09/2026",
+      "nazione": "GBR",
+      "distribuzione": "LUCKY RED DISTRIBUZIONE",
+      "incasso_eur": 175332.0,
+      "presenze": 22467,
+      "incasso_totale_eur": 3710195.0,
+      "presenze_totale": 494005
+    },
+    {
+      "pos": 5,
+      "titolo": "ODISSEA",
+      "prima_programmazione": "16/07/2026",
+      "nazione": "GBR",
+      "distribuzione": "UNIVERSAL",
+      "incasso_eur": 168307.0,
+      "presenze": 18132,
+      "incasso_totale_eur": 57841128.0,
+      "presenze_totale": 6855813
+    },
+    {
+      "pos": 6,
+      "titolo": "PAW PATROL : MISSIONE DINOSAURI",
+      "prima_programmazione": "09/09/2026",
+      "nazione": "CAN",
+      "distribuzione": "EAGLE PICTURES",
+      "incasso_eur": 142509.0,
+      "presenze": 18874,
+      "incasso_totale_eur": 1478383.0,
+      "presenze_totale": 201455
+    },
+    {
+      "pos": 7,
+      "titolo": "OCEANIA (MOANA)",
+      "prima_programmazione": "19/08/2026",
+      "nazione": "USA",
+      "distribuzione": "WALT DISNEY S.M.P. ITALIA",
+      "incasso_eur": 88594.0,
+      "presenze": 11416,
+      "incasso_totale_eur": 11299089.0,
+      "presenze_totale": 1471399
+    },
+    {
+      "pos": 8,
+      "titolo": "SPIDER-MAN: BRAND NEW DAY",
+      "prima_programmazione": "29/07/2026",
+      "nazione": "USA",
+      "distribuzione": "EAGLE PICTURES",
+      "incasso_eur": 52009.0,
+      "presenze": 6034,
+      "incasso_totale_eur": 38463239.0,
+      "presenze_totale": 4776217
+    }
+  ]
+}
