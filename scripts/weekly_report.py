@@ -1,23 +1,30 @@
 #!/usr/bin/env python3
 """
-Report settimanale Cinetel via email.
+Report settimanale Cinetel via email
 
 Da eseguire ogni lunedì (dopo lo scrape giornaliero). Legge lo storico
 accumulato in data/cinetel_boxoffice.csv, aggrega per film la settimana
 appena conclusa (lunedì-domenica) e invia una email HTML con la tabella a
 gabriele.niola@gmail.com.
 
-Colonne del report:
+Colonne del report (in quest'ordine):
   1. Titolo
   2. Distribuzione
-  3. Incasso settimana (lun-dom)
-  4. Presenze settimana (lun-dom)
-  5. Incasso weekend (ven-dom)
-  6. Presenze weekend (ven-dom)
+  3. Incasso weekend (gio-dom)
+  4. Presenze weekend (gio-dom)
+  5. Incasso settimana (lun-dom)
+  6. Presenze settimana (lun-dom)
   7. Incasso totale dall'uscita in sala — preso direttamente dal campo
      "Incasso al <data>" che Cinetel pubblica per ogni film (valore
      dell'ultimo giorno disponibile nella settimana), NON un cumulato
      calcolato da noi.
+
+Il "weekend" va da GIOVEDÌ a domenica (non solo ven-dom): in Italia i film
+escono di giovedì, e Cinetel include quel giorno nel proprio weekend
+ufficiale — allineiamo la nostra definizione alla loro per confrontabilità.
+
+La classifica è ordinata per INCASSO WEEKEND decrescente (non più per
+incasso settimanale), come fa il report ufficiale di Cinetel.
 
 Richiede due secret d'ambiente per l'invio SMTP via Gmail:
   GMAIL_ADDRESS       -> l'indirizzo gmail mittente (e destinatario)
@@ -68,7 +75,7 @@ def previous_week_range(today: date):
 
 
 def build_report(rows, week_start: date, week_end: date):
-    weekend_start = week_end - timedelta(days=2)  # venerdì della stessa settimana
+    weekend_start = week_end - timedelta(days=3)  # giovedì della stessa settimana
 
     per_film = defaultdict(lambda: {
         "distribuzione": "",
@@ -122,7 +129,7 @@ def build_report(rows, week_start: date, week_end: date):
         for titolo, data in per_film.items()
         if data["giorni_settimana_trovati"]
     ]
-    result.sort(key=lambda x: x["incasso_settimana"], reverse=True)
+    result.sort(key=lambda x: x["incasso_weekend"], reverse=True)
     return result
 
 
@@ -157,10 +164,10 @@ def render_html(report, week_start, week_end, covered_days):
           <td style="padding:6px 10px;border:1px solid #ddd;">{i}</td>
           <td style="padding:6px 10px;border:1px solid #ddd;">{f['titolo']}</td>
           <td style="padding:6px 10px;border:1px solid #ddd;">{f['distribuzione']}</td>
-          <td style="padding:6px 10px;border:1px solid #ddd;text-align:right;">{euro(f['incasso_settimana'])}</td>
-          <td style="padding:6px 10px;border:1px solid #ddd;text-align:right;">{it_number(f['presenze_settimana'])}</td>
           <td style="padding:6px 10px;border:1px solid #ddd;text-align:right;">{euro(f['incasso_weekend'])}</td>
           <td style="padding:6px 10px;border:1px solid #ddd;text-align:right;">{it_number(f['presenze_weekend'])}</td>
+          <td style="padding:6px 10px;border:1px solid #ddd;text-align:right;">{euro(f['incasso_settimana'])}</td>
+          <td style="padding:6px 10px;border:1px solid #ddd;text-align:right;">{it_number(f['presenze_settimana'])}</td>
           <td style="padding:6px 10px;border:1px solid #ddd;text-align:right;">{euro(f['incasso_totale'])}</td>
         </tr>"""
 
@@ -175,10 +182,10 @@ def render_html(report, week_start, week_end, covered_days):
             <th style="padding:6px 10px;border:1px solid #1f3a5f;">#</th>
             <th style="padding:6px 10px;border:1px solid #1f3a5f;">Titolo</th>
             <th style="padding:6px 10px;border:1px solid #1f3a5f;">Distribuzione</th>
+            <th style="padding:6px 10px;border:1px solid #1f3a5f;">Incasso weekend (gio-dom)</th>
+            <th style="padding:6px 10px;border:1px solid #1f3a5f;">Presenze weekend (gio-dom)</th>
             <th style="padding:6px 10px;border:1px solid #1f3a5f;">Incasso settimana</th>
             <th style="padding:6px 10px;border:1px solid #1f3a5f;">Presenze settimana</th>
-            <th style="padding:6px 10px;border:1px solid #1f3a5f;">Incasso weekend (ven-dom)</th>
-            <th style="padding:6px 10px;border:1px solid #1f3a5f;">Presenze weekend (ven-dom)</th>
             <th style="padding:6px 10px;border:1px solid #1f3a5f;">Incasso totale dall'uscita*</th>
           </tr>
         </thead>
