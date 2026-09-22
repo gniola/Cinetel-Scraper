@@ -1,0 +1,116 @@
+{
+  "data_riferimento": "2026-09-21",
+  "scraped_at_utc": "2026-09-22T10:14:00+00:00",
+  "film": [
+    {
+      "pos": 1,
+      "titolo": "RESIDENT EVIL",
+      "prima_programmazione": "17/09/2026",
+      "nazione": "USA",
+      "distribuzione": "EAGLE PICTURES",
+      "incasso_eur": 140955.0,
+      "presenze": 38316,
+      "incasso_totale_eur": 1586145.0,
+      "presenze_totale": 208788
+    },
+    {
+      "pos": 2,
+      "titolo": "CARS: MOTORI RUGGENTI - 20 ANNI",
+      "prima_programmazione": "17/09/2026",
+      "nazione": "USA",
+      "distribuzione": "WALT DISNEY S.M.P. ITALIA",
+      "incasso_eur": 74075.0,
+      "presenze": 21079,
+      "incasso_totale_eur": 911400.0,
+      "presenze_totale": 123928
+    },
+    {
+      "pos": 3,
+      "titolo": "THE INVITE – IL PIACERE È TUTTO NOSTRO",
+      "prima_programmazione": "16/09/2026",
+      "nazione": "USA",
+      "distribuzione": "I WONDER PICTURES",
+      "incasso_eur": 58622.0,
+      "presenze": 15352,
+      "incasso_totale_eur": 777710.0,
+      "presenze_totale": 114656
+    },
+    {
+      "pos": 4,
+      "titolo": "ODISSEA",
+      "prima_programmazione": "16/07/2026",
+      "nazione": "GBR",
+      "distribuzione": "UNIVERSAL",
+      "incasso_eur": 49663.0,
+      "presenze": 11990,
+      "incasso_totale_eur": 57892755.0,
+      "presenze_totale": 6868099
+    },
+    {
+      "pos": 5,
+      "titolo": "COYOTE VS ACME",
+      "prima_programmazione": "02/09/2026",
+      "nazione": "GBR",
+      "distribuzione": "LUCKY RED DISTRIBUZIONE",
+      "incasso_eur": 41074.0,
+      "presenze": 11480,
+      "incasso_totale_eur": 3755395.0,
+      "presenze_totale": 506133
+    },
+    {
+      "pos": 6,
+      "titolo": "SPIDER-MAN: BRAND NEW DAY",
+      "prima_programmazione": "29/07/2026",
+      "nazione": "USA",
+      "distribuzione": "EAGLE PICTURES",
+      "incasso_eur": 19822.0,
+      "presenze": 5552,
+      "incasso_totale_eur": 38483449.0,
+      "presenze_totale": 4781824
+    },
+    {
+      "pos": 7,
+      "titolo": "PAW PATROL : MISSIONE DINOSAURI",
+      "prima_programmazione": "09/09/2026",
+      "nazione": "CAN",
+      "distribuzione": "EAGLE PICTURES",
+      "incasso_eur": 16396.0,
+      "presenze": 4572,
+      "incasso_totale_eur": 1497228.0,
+      "presenze_totale": 206398
+    },
+    {
+      "pos": 8,
+      "titolo": "OCEANIA (MOANA)",
+      "prima_programmazione": "19/08/2026",
+      "nazione": "USA",
+      "distribuzione": "WALT DISNEY S.M.P. ITALIA",
+      "incasso_eur": 15374.0,
+      "presenze": 4352,
+      "incasso_totale_eur": 11315500.0,
+      "presenze_totale": 1475891
+    },
+    {
+      "pos": 9,
+      "titolo": "AMORI & INCANTESIMI 2 (PRACTICAL MAGIC 2)",
+      "prima_programmazione": "10/09/2026",
+      "nazione": "GBR",
+      "distribuzione": "WARNER BROS. ITALIA",
+      "incasso_eur": 12747.0,
+      "presenze": 3548,
+      "incasso_totale_eur": 632864.0,
+      "presenze_totale": 86169
+    },
+    {
+      "pos": 10,
+      "titolo": "DOV'È LA FIESTA?",
+      "prima_programmazione": "17/09/2026",
+      "nazione": "ITA",
+      "distribuzione": "VISION DISTRIBUTION",
+      "incasso_eur": 12530.0,
+      "presenze": 3524,
+      "incasso_totale_eur": 108991.0,
+      "presenze_totale": 18647
+    }
+  ]
+}
