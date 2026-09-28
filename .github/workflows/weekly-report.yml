@@ -2,7 +2,7 @@ name: Cinetel weekly report
 
 on:
   schedule:
-    - cron: "7 6 * * 1"
+    - cron: "17 6 * * 1"
   workflow_dispatch: {}
 
 permissions:
