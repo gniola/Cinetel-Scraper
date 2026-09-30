@@ -1,0 +1,116 @@
+{
+  "data_riferimento": "2026-09-29",
+  "scraped_at_utc": "2026-09-30T11:18:06+00:00",
+  "film": [
+    {
+      "pos": 1,
+      "titolo": "NAZA",
+      "prima_programmazione": "28/09/2026",
+      "nazione": "GBR",
+      "distribuzione": "I WONDER PICTURES",
+      "incasso_eur": 623164.0,
+      "presenze": 83163,
+      "incasso_totale_eur": 1096816.0,
+      "presenze_totale": 146720
+    },
+    {
+      "pos": 2,
+      "titolo": "AVENGERS: ENDGAME EXTRA",
+      "prima_programmazione": "24/09/2026",
+      "nazione": "USA",
+      "distribuzione": "WALT DISNEY S.M.P. ITALIA",
+      "incasso_eur": 176837.0,
+      "presenze": 19478,
+      "incasso_totale_eur": 2667100.0,
+      "presenze_totale": 370185
+    },
+    {
+      "pos": 3,
+      "titolo": "ULTIMO - TUTTO. LIVE A TOR VERGATA",
+      "prima_programmazione": "22/09/2026",
+      "nazione": "ITA",
+      "distribuzione": "NEXO DIGITAL S.R.L.",
+      "incasso_eur": 147355.0,
+      "presenze": 9449,
+      "incasso_totale_eur": 2935500.0,
+      "presenze_totale": 186760
+    },
+    {
+      "pos": 4,
+      "titolo": "HEART OF THE BEAST - NEL PROFONDO SELVAGGIO",
+      "prima_programmazione": "24/09/2026",
+      "nazione": "USA",
+      "distribuzione": "EAGLE PICTURES",
+      "incasso_eur": 118101.0,
+      "presenze": 16496,
+      "incasso_totale_eur": 1258287.0,
+      "presenze_totale": 177125
+    },
+    {
+      "pos": 5,
+      "titolo": "RESIDENT EVIL",
+      "prima_programmazione": "17/09/2026",
+      "nazione": "USA",
+      "distribuzione": "EAGLE PICTURES",
+      "incasso_eur": 83051.0,
+      "presenze": 10913,
+      "incasso_totale_eur": 2870305.0,
+      "presenze_totale": 432721
+    },
+    {
+      "pos": 6,
+      "titolo": "THE INVITE – IL PIACERE È TUTTO NOSTRO",
+      "prima_programmazione": "16/09/2026",
+      "nazione": "USA",
+      "distribuzione": "I WONDER PICTURES",
+      "incasso_eur": 33731.0,
+      "presenze": 5069,
+      "incasso_totale_eur": 1398675.0,
+      "presenze_totale": 225576
+    },
+    {
+      "pos": 7,
+      "titolo": "ODISSEA",
+      "prima_programmazione": "16/07/2026",
+      "nazione": "GBR",
+      "distribuzione": "UNIVERSAL",
+      "incasso_eur": 23218.0,
+      "presenze": 3018,
+      "incasso_totale_eur": 58327370.0,
+      "presenze_totale": 6941977
+    },
+    {
+      "pos": 8,
+      "titolo": "L'ISOLA DEI RICORDI (FORGOTTEN ISLAND)",
+      "prima_programmazione": "24/09/2026",
+      "nazione": "USA",
+      "distribuzione": "UNIVERSAL",
+      "incasso_eur": 22766.0,
+      "presenze": 3481,
+      "incasso_totale_eur": 414843.0,
+      "presenze_totale": 62191
+    },
+    {
+      "pos": 9,
+      "titolo": "CARS: MOTORI RUGGENTI - 20 ANNI",
+      "prima_programmazione": "17/09/2026",
+      "nazione": "USA",
+      "distribuzione": "WALT DISNEY S.M.P. ITALIA",
+      "incasso_eur": 18531.0,
+      "presenze": 2465,
+      "incasso_totale_eur": 1299314.0,
+      "presenze_totale": 201540
+    },
+    {
+      "pos": 10,
+      "titolo": "COYOTE VS ACME",
+      "prima_programmazione": "02/09/2026",
+      "nazione": "GBR",
+      "distribuzione": "LUCKY RED DISTRIBUZIONE",
+      "incasso_eur": 17163.0,
+      "presenze": 2517,
+      "incasso_totale_eur": 4152672.0,
+      "presenze_totale": 580221
+    }
+  ]
+}
