@@ -1,0 +1,116 @@
+{
+  "data_riferimento": "2026-10-01",
+  "scraped_at_utc": "2026-10-02T11:15:38+00:00",
+  "film": [
+    {
+      "pos": 1,
+      "titolo": "NAZA",
+      "prima_programmazione": "28/09/2026",
+      "nazione": "GBR",
+      "distribuzione": "I WONDER PICTURES",
+      "incasso_eur": 183656.0,
+      "presenze": 24008,
+      "incasso_totale_eur": 1995949.0,
+      "presenze_totale": 268277
+    },
+    {
+      "pos": 2,
+      "titolo": "HEART OF THE BEAST - NEL PROFONDO SELVAGGIO",
+      "prima_programmazione": "24/09/2026",
+      "nazione": "USA",
+      "distribuzione": "EAGLE PICTURES",
+      "incasso_eur": 82382.0,
+      "presenze": 10879,
+      "incasso_totale_eur": 1478183.0,
+      "presenze_totale": 208449
+    },
+    {
+      "pos": 3,
+      "titolo": "VERITY",
+      "prima_programmazione": "01/10/2026",
+      "nazione": "USA",
+      "distribuzione": "EAGLE PICTURES",
+      "incasso_eur": 76570.0,
+      "presenze": 10174,
+      "incasso_totale_eur": 76570.0,
+      "presenze_totale": 10174
+    },
+    {
+      "pos": 4,
+      "titolo": "DIGGER",
+      "prima_programmazione": "01/10/2026",
+      "nazione": "GBR",
+      "distribuzione": "WARNER BROS. ITALIA",
+      "incasso_eur": 76440.0,
+      "presenze": 10705,
+      "incasso_totale_eur": 76440.0,
+      "presenze_totale": 10705
+    },
+    {
+      "pos": 5,
+      "titolo": "AVENGERS: ENDGAME EXTRA",
+      "prima_programmazione": "24/09/2026",
+      "nazione": "USA",
+      "distribuzione": "WALT DISNEY S.M.P. ITALIA",
+      "incasso_eur": 52225.0,
+      "presenze": 6049,
+      "incasso_totale_eur": 2902753.0,
+      "presenze_totale": 396750
+    },
+    {
+      "pos": 6,
+      "titolo": "RESIDENT EVIL",
+      "prima_programmazione": "17/09/2026",
+      "nazione": "USA",
+      "distribuzione": "EAGLE PICTURES",
+      "incasso_eur": 47732.0,
+      "presenze": 5987,
+      "incasso_totale_eur": 3014600.0,
+      "presenze_totale": 452149
+    },
+    {
+      "pos": 7,
+      "titolo": "LINKIN PARK: UNSHATTER",
+      "prima_programmazione": "30/09/2026",
+      "nazione": "USA",
+      "distribuzione": "NEXO DIGITAL S.R.L.",
+      "incasso_eur": 40978.0,
+      "presenze": 3055,
+      "incasso_totale_eur": 100269.0,
+      "presenze_totale": 7522
+    },
+    {
+      "pos": 8,
+      "titolo": "LA CITTA' DEI VIVI",
+      "prima_programmazione": "01/10/2026",
+      "nazione": "ITA",
+      "distribuzione": "EAGLE PICTURES",
+      "incasso_eur": 20413.0,
+      "presenze": 2862,
+      "incasso_totale_eur": 27451.0,
+      "presenze_totale": 3893
+    },
+    {
+      "pos": 9,
+      "titolo": "THE BIBI FILES",
+      "prima_programmazione": "30/09/2026",
+      "nazione": "USA",
+      "distribuzione": "MESCALITO FILM",
+      "incasso_eur": 19357.0,
+      "presenze": 2563,
+      "incasso_totale_eur": 194310.0,
+      "presenze_totale": 25701
+    },
+    {
+      "pos": 10,
+      "titolo": "THE INVITE – IL PIACERE È TUTTO NOSTRO",
+      "prima_programmazione": "16/09/2026",
+      "nazione": "USA",
+      "distribuzione": "I WONDER PICTURES",
+      "incasso_eur": 16108.0,
+      "presenze": 2203,
+      "incasso_totale_eur": 1446649.0,
+      "presenze_totale": 232730
+    }
+  ]
+}
