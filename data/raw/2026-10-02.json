@@ -1,0 +1,116 @@
+{
+  "data_riferimento": "2026-10-02",
+  "scraped_at_utc": "2026-10-03T10:32:21+00:00",
+  "film": [
+    {
+      "pos": 1,
+      "titolo": "NAZA",
+      "prima_programmazione": "28/09/2026",
+      "nazione": "GBR",
+      "distribuzione": "I WONDER PICTURES",
+      "incasso_eur": 231149.0,
+      "presenze": 29420,
+      "incasso_totale_eur": 2232012.0,
+      "presenze_totale": 298428
+    },
+    {
+      "pos": 2,
+      "titolo": "VERITY",
+      "prima_programmazione": "01/10/2026",
+      "nazione": "USA",
+      "distribuzione": "EAGLE PICTURES",
+      "incasso_eur": 130974.0,
+      "presenze": 16770,
+      "incasso_totale_eur": 208678.0,
+      "presenze_totale": 27108
+    },
+    {
+      "pos": 3,
+      "titolo": "HEART OF THE BEAST - NEL PROFONDO SELVAGGIO",
+      "prima_programmazione": "24/09/2026",
+      "nazione": "USA",
+      "distribuzione": "EAGLE PICTURES",
+      "incasso_eur": 123790.0,
+      "presenze": 15603,
+      "incasso_totale_eur": 1602421.0,
+      "presenze_totale": 224121
+    },
+    {
+      "pos": 4,
+      "titolo": "AVENGERS: ENDGAME EXTRA",
+      "prima_programmazione": "24/09/2026",
+      "nazione": "USA",
+      "distribuzione": "WALT DISNEY S.M.P. ITALIA",
+      "incasso_eur": 90488.0,
+      "presenze": 10260,
+      "incasso_totale_eur": 2993638.0,
+      "presenze_totale": 407064
+    },
+    {
+      "pos": 5,
+      "titolo": "DIGGER",
+      "prima_programmazione": "01/10/2026",
+      "nazione": "GBR",
+      "distribuzione": "WARNER BROS. ITALIA",
+      "incasso_eur": 88469.0,
+      "presenze": 11881,
+      "incasso_totale_eur": 165172.0,
+      "presenze_totale": 22627
+    },
+    {
+      "pos": 6,
+      "titolo": "RESIDENT EVIL",
+      "prima_programmazione": "17/09/2026",
+      "nazione": "USA",
+      "distribuzione": "EAGLE PICTURES",
+      "incasso_eur": 80058.0,
+      "presenze": 9654,
+      "incasso_totale_eur": 3095112.0,
+      "presenze_totale": 461867
+    },
+    {
+      "pos": 7,
+      "titolo": "LINKIN PARK: UNSHATTER",
+      "prima_programmazione": "30/09/2026",
+      "nazione": "USA",
+      "distribuzione": "NEXO DIGITAL S.R.L.",
+      "incasso_eur": 54921.0,
+      "presenze": 4036,
+      "incasso_totale_eur": 155585.0,
+      "presenze_totale": 11591
+    },
+    {
+      "pos": 8,
+      "titolo": "LA CITTA' DEI VIVI",
+      "prima_programmazione": "01/10/2026",
+      "nazione": "ITA",
+      "distribuzione": "EAGLE PICTURES",
+      "incasso_eur": 27277.0,
+      "presenze": 3763,
+      "incasso_totale_eur": 54783.0,
+      "presenze_totale": 7663
+    },
+    {
+      "pos": 9,
+      "titolo": "THE INVITE – IL PIACERE È TUTTO NOSTRO",
+      "prima_programmazione": "16/09/2026",
+      "nazione": "USA",
+      "distribuzione": "I WONDER PICTURES",
+      "incasso_eur": 23740.0,
+      "presenze": 3127,
+      "incasso_totale_eur": 1470578.0,
+      "presenze_totale": 235881
+    },
+    {
+      "pos": 10,
+      "titolo": "ODISSEA",
+      "prima_programmazione": "16/07/2026",
+      "nazione": "GBR",
+      "distribuzione": "UNIVERSAL",
+      "incasso_eur": 22578.0,
+      "presenze": 3201,
+      "incasso_totale_eur": 58382879.0,
+      "presenze_totale": 6949970
+    }
+  ]
+}
