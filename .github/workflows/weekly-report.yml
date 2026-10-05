@@ -2,7 +2,11 @@ name: Cinetel weekly report
 
 on:
   schedule:
-    - cron: "17 6 * * 1"
+    # Due cron: uno per l'ora legale (CEST) e uno per l'ora solare (CET).
+    # Il passo "Controlla stagione" lascia procedere solo quello giusto,
+    # cosi' l'email parte sempre alle 7:17 ora di Roma tutto l'anno.
+    - cron: "17 5 * * 1"   # 07:17 a Roma in CEST (UTC+2)
+    - cron: "17 6 * * 1"   # 07:17 a Roma in CET  (UTC+1)
   workflow_dispatch: {}
 
 permissions:
