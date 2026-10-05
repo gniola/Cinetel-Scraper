@@ -1,30 +1,53 @@
 name: Cinetel weekly report
 
 on:
-  schedule:
-    # Due cron: uno per l'ora legale (CEST) e uno per l'ora solare (CET).
-    # Il passo "Controlla stagione" lascia procedere solo quello giusto,
-    # cosi' l'email parte sempre alle 7:17 ora di Roma tutto l'anno.
-    - cron: "17 5 * * 1"   # 07:17 a Roma in CEST (UTC+2)
-    - cron: "17 6 * * 1"   # 07:17 a Roma in CET  (UTC+1)
-  workflow_dispatch: {}
+  # Parte quando il workflow "Cinetel daily scrape" finisce.
+  # Il controllo qui sotto lo lascia proseguire solo di lunedi' (ora di Roma)
+  # e solo se nel CSV ci sono gia' i dati della domenica.
+  workflow_run:
+    workflows: ["Cinetel daily scrape"]
+    types: [completed]
+  workflow_dispatch: {}  # lancio manuale: salta il controllo del giorno
 
 permissions:
   contents: read
 
 jobs:
   weekly-report:
+    # Se arriva da workflow_run, procede solo se lo scrape e' andato a buon fine
+    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
 
+      - name: Controlla che il daily scrape della domenica sia gia' stato fatto
+        id: gate
+        run: |
+          RUN=true
+          if [ "${{ github.event_name }}" = "workflow_run" ]; then
+            DOW=$(TZ=Europe/Rome date +%u)          # 1 = lunedi'
+            SUNDAY=$(TZ=Europe/Rome date -d "yesterday" +%F)
+            if [ "$DOW" != "1" ]; then
+              echo "Oggi non e' lunedi' (giorno $DOW): salto."
+              RUN=false
+            elif ! grep -q "^${SUNDAY}," data/cinetel_boxoffice.csv; then
+              echo "Nel CSV mancano i dati di domenica $SUNDAY: salto."
+              RUN=false
+            else
+              echo "Trovati i dati di domenica $SUNDAY: procedo."
+            fi
+          fi
+          echo "run=$RUN" >> "$GITHUB_OUTPUT"
+
       - name: Set up Python
+        if: steps.gate.outputs.run == 'true'
         uses: actions/setup-python@v5
         with:
           python-version: "3.12"
 
       - name: Send weekly report email
+        if: steps.gate.outputs.run == 'true'
         env:
           GMAIL_ADDRESS: ${{ secrets.GMAIL_ADDRESS }}
           GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
