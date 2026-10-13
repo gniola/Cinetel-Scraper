@@ -1,0 +1,116 @@
+{
+  "data_riferimento": "2026-10-12",
+  "scraped_at_utc": "2026-10-13T13:53:28+00:00",
+  "film": [
+    {
+      "pos": 1,
+      "titolo": "MAMMINA (OTHER MOMMY)",
+      "prima_programmazione": "08/10/2026",
+      "nazione": "USA",
+      "distribuzione": "UNIVERSAL",
+      "incasso_eur": 154961.0,
+      "presenze": 19635,
+      "incasso_totale_eur": 2142225.0,
+      "presenze_totale": 252870
+    },
+    {
+      "pos": 2,
+      "titolo": "NAZA",
+      "prima_programmazione": "28/09/2026",
+      "nazione": "GBR",
+      "distribuzione": "I WONDER PICTURES",
+      "incasso_eur": 91180.0,
+      "presenze": 12787,
+      "incasso_totale_eur": 4608778.0,
+      "presenze_totale": 603760
+    },
+    {
+      "pos": 3,
+      "titolo": "L'ESTRANEA",
+      "prima_programmazione": "08/10/2026",
+      "nazione": "COP",
+      "distribuzione": "01 DISTRIBUTION",
+      "incasso_eur": 76094.0,
+      "presenze": 11616,
+      "incasso_totale_eur": 885369.0,
+      "presenze_totale": 124166
+    },
+    {
+      "pos": 4,
+      "titolo": "DR STRANAMORE 4K (RIED. 2026)",
+      "prima_programmazione": "12/10/2026",
+      "nazione": "USA",
+      "distribuzione": "LUCKY RED DISTRIBUZIONE",
+      "incasso_eur": 44319.0,
+      "presenze": 6094,
+      "incasso_totale_eur": 44819.0,
+      "presenze_totale": 6144
+    },
+    {
+      "pos": 5,
+      "titolo": "HEART OF THE BEAST - NEL PROFONDO SELVAGGIO",
+      "prima_programmazione": "24/09/2026",
+      "nazione": "USA",
+      "distribuzione": "EAGLE PICTURES",
+      "incasso_eur": 40455.0,
+      "presenze": 5335,
+      "incasso_totale_eur": 2954969.0,
+      "presenze_totale": 393423
+    },
+    {
+      "pos": 6,
+      "titolo": "VERITY",
+      "prima_programmazione": "01/10/2026",
+      "nazione": "USA",
+      "distribuzione": "EAGLE PICTURES",
+      "incasso_eur": 36224.0,
+      "presenze": 4987,
+      "incasso_totale_eur": 1448058.0,
+      "presenze_totale": 185109
+    },
+    {
+      "pos": 7,
+      "titolo": "DIGGER",
+      "prima_programmazione": "01/10/2026",
+      "nazione": "GBR",
+      "distribuzione": "WARNER BROS. ITALIA",
+      "incasso_eur": 35144.0,
+      "presenze": 5164,
+      "incasso_totale_eur": 1165372.0,
+      "presenze_totale": 156896
+    },
+    {
+      "pos": 8,
+      "titolo": "ALWAYS LALISA",
+      "prima_programmazione": "12/10/2026",
+      "nazione": "USA",
+      "distribuzione": "NEXO DIGITAL S.R.L.",
+      "incasso_eur": 26819.0,
+      "presenze": 1815,
+      "incasso_totale_eur": 26819.0,
+      "presenze_totale": 1815
+    },
+    {
+      "pos": 9,
+      "titolo": "ESSI VIVONO (THEY LIVE)",
+      "prima_programmazione": "04/05/2024",
+      "nazione": "USA",
+      "distribuzione": "FILMCLUB DISTRIBUZIONE",
+      "incasso_eur": 23194.0,
+      "presenze": 3122,
+      "incasso_totale_eur": 29112.0,
+      "presenze_totale": 4258
+    },
+    {
+      "pos": 10,
+      "titolo": "RESIDENT EVIL",
+      "prima_programmazione": "17/09/2026",
+      "nazione": "USA",
+      "distribuzione": "EAGLE PICTURES",
+      "incasso_eur": 17315.0,
+      "presenze": 2181,
+      "incasso_totale_eur": 3653351.0,
+      "presenze_totale": 528240
+    }
+  ]
+}
