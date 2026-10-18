@@ -1,0 +1,116 @@
+{
+  "data_riferimento": "2026-10-17",
+  "scraped_at_utc": "2026-10-18T09:48:13+00:00",
+  "film": [
+    {
+      "pos": 1,
+      "titolo": "JE SO' PAZZO",
+      "prima_programmazione": "15/10/2026",
+      "nazione": "ITA",
+      "distribuzione": "01 DISTRIBUTION",
+      "incasso_eur": 485097.0,
+      "presenze": 60484,
+      "incasso_totale_eur": 926183.0,
+      "presenze_totale": 117188
+    },
+    {
+      "pos": 2,
+      "titolo": "MAMMINA (OTHER MOMMY)",
+      "prima_programmazione": "08/10/2026",
+      "nazione": "IRL",
+      "distribuzione": "UNIVERSAL",
+      "incasso_eur": 315350.0,
+      "presenze": 35211,
+      "incasso_totale_eur": 3058295.0,
+      "presenze_totale": 363845
+    },
+    {
+      "pos": 3,
+      "titolo": "L'ESTRANEA",
+      "prima_programmazione": "08/10/2026",
+      "nazione": "COP",
+      "distribuzione": "01 DISTRIBUTION",
+      "incasso_eur": 275090.0,
+      "presenze": 35844,
+      "incasso_totale_eur": 1606324.0,
+      "presenze_totale": 225812
+    },
+    {
+      "pos": 4,
+      "titolo": "PRIMETIME",
+      "prima_programmazione": "15/10/2026",
+      "nazione": "USA",
+      "distribuzione": "I WONDER PICTURES",
+      "incasso_eur": 154238.0,
+      "presenze": 19898,
+      "incasso_totale_eur": 318293.0,
+      "presenze_totale": 42568
+    },
+    {
+      "pos": 5,
+      "titolo": "STREET FIGHTER",
+      "prima_programmazione": "15/10/2026",
+      "nazione": "USA",
+      "distribuzione": "EAGLE PICTURES",
+      "incasso_eur": 139270.0,
+      "presenze": 16198,
+      "incasso_totale_eur": 269153.0,
+      "presenze_totale": 32206
+    },
+    {
+      "pos": 6,
+      "titolo": "WHALEFALL: NELLA BALENA",
+      "prima_programmazione": "15/10/2026",
+      "nazione": "USA",
+      "distribuzione": "WALT DISNEY S.M.P. ITALIA",
+      "incasso_eur": 136031.0,
+      "presenze": 16455,
+      "incasso_totale_eur": 251182.0,
+      "presenze_totale": 31427
+    },
+    {
+      "pos": 7,
+      "titolo": "HEART OF THE BEAST - NEL PROFONDO SELVAGGIO",
+      "prima_programmazione": "24/09/2026",
+      "nazione": "USA",
+      "distribuzione": "EAGLE PICTURES",
+      "incasso_eur": 99365.0,
+      "presenze": 12016,
+      "incasso_totale_eur": 3222825.0,
+      "presenze_totale": 427640
+    },
+    {
+      "pos": 8,
+      "titolo": "CARLO ACUTIS. IL GIOVANE SANTO",
+      "prima_programmazione": "15/10/2026",
+      "nazione": "ITA",
+      "distribuzione": "NEXO DIGITAL S.R.L.",
+      "incasso_eur": 95203.0,
+      "presenze": 10449,
+      "incasso_totale_eur": 226302.0,
+      "presenze_totale": 25256
+    },
+    {
+      "pos": 9,
+      "titolo": "SE AMI QUALCUNO DILLO",
+      "prima_programmazione": "16/10/2026",
+      "nazione": "ITA",
+      "distribuzione": "VISION DISTRIBUTION",
+      "incasso_eur": 88932.0,
+      "presenze": 11715,
+      "incasso_totale_eur": 122907.0,
+      "presenze_totale": 16495
+    },
+    {
+      "pos": 10,
+      "titolo": "NAZA",
+      "prima_programmazione": "28/09/2026",
+      "nazione": "GBR",
+      "distribuzione": "I WONDER PICTURES",
+      "incasso_eur": 87596.0,
+      "presenze": 10812,
+      "incasso_totale_eur": 4991825.0,
+      "presenze_totale": 656434
+    }
+  ]
+}
