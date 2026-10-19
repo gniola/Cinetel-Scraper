@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Report settimanale Cinetel via email
+Report settimanale Cinetel via email.
 
 Da eseguire ogni lunedì (dopo lo scrape giornaliero). Legge lo storico
 accumulato in data/cinetel_boxoffice.csv, aggrega per film la settimana
@@ -12,9 +12,10 @@ Colonne del report (in quest'ordine):
   2. Distribuzione
   3. Incasso weekend (gio-dom)
   4. Presenze weekend (gio-dom)
-  5. Incasso settimana (lun-dom)
-  6. Presenze settimana (lun-dom)
-  7. Incasso totale dall'uscita in sala — preso direttamente dal campo
+  5. Schermi (da ComingSoon) + media per sala = incasso weekend / schermi
+  6. Incasso settimana (lun-dom)
+  7. Presenze settimana (lun-dom)
+  8. Incasso totale dall'uscita in sala — preso direttamente dal campo
      "Incasso al <data>" che Cinetel pubblica per ogni film (valore
      dell'ultimo giorno disponibile nella settimana), NON un cumulato
      calcolato da noi.
@@ -40,6 +41,9 @@ from datetime import date, timedelta
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+import scrape_schermi  # noqa: E402  (schermi per film da ComingSoon)
 
 ROOT = Path(__file__).resolve().parent.parent
 CSV_PATH = ROOT / "data" / "cinetel_boxoffice.csv"
@@ -133,6 +137,37 @@ def build_report(rows, week_start: date, week_end: date):
     return result
 
 
+def attach_schermi(report, week_end: date):
+    """Aggiunge a ogni film 'schermi' e 'media_sala' (incasso weekend / schermi).
+    Fonte: ComingSoon, weekend che finisce alla domenica del report. Prova
+    anche un download "live" della pagina; se qualcosa non va, i campi
+    restano None e l'email mostra 'n.d.' (il report parte comunque)."""
+    cs_rows, live = [], None
+    try:
+        live = scrape_schermi.scrape()
+        scrape_schermi.save_rows(*live)  # utile solo in locale; su Actions non viene committato
+    except Exception as e:
+        print(f"Schermi: download ComingSoon non riuscito ({e}); uso solo lo storico.", file=sys.stderr)
+    try:
+        cs_rows = scrape_schermi.rows_for_weekend(week_end, scrape_schermi.load_csv(), live)
+    except Exception as e:
+        print(f"Schermi: storico non leggibile ({e}).", file=sys.stderr)
+
+    trovati = 0
+    for f in report:
+        f["schermi"], f["media_sala"] = None, None
+        m = scrape_schermi.match_schermi(
+            f["titolo"], f["distribuzione"], f["incasso_weekend"], cs_rows
+        )
+        if m and m.get("schermi"):
+            f["schermi"] = m["schermi"]
+            if f["incasso_weekend"]:
+                f["media_sala"] = f["incasso_weekend"] / m["schermi"]
+            trovati += 1
+    print(f"Schermi trovati per {trovati}/{len(report)} film (righe ComingSoon: {len(cs_rows)}).")
+    return report
+
+
 def days_covered(rows, week_start: date, week_end: date):
     found = set()
     for r in rows:
@@ -143,6 +178,15 @@ def days_covered(rows, week_start: date, week_end: date):
         if week_start <= d <= week_end:
             found.add(d)
     return sorted(found)
+
+
+def schermi_cell(f) -> str:
+    if not f.get("schermi"):
+        return '<span style="color:#999;">n.d.</span>'
+    cell = it_number(f["schermi"])
+    if f.get("media_sala") is not None:
+        cell += f'<br><span style="color:#555;font-size:11px;">media {euro(f["media_sala"])}</span>'
+    return cell
 
 
 def render_html(report, week_start, week_end, covered_days):
@@ -166,6 +210,7 @@ def render_html(report, week_start, week_end, covered_days):
           <td style="padding:6px 10px;border:1px solid #ddd;">{f['distribuzione']}</td>
           <td style="padding:6px 10px;border:1px solid #ddd;text-align:right;">{euro(f['incasso_weekend'])}</td>
           <td style="padding:6px 10px;border:1px solid #ddd;text-align:right;">{it_number(f['presenze_weekend'])}</td>
+          <td style="padding:6px 10px;border:1px solid #ddd;text-align:right;">{schermi_cell(f)}</td>
           <td style="padding:6px 10px;border:1px solid #ddd;text-align:right;">{euro(f['incasso_settimana'])}</td>
           <td style="padding:6px 10px;border:1px solid #ddd;text-align:right;">{it_number(f['presenze_settimana'])}</td>
           <td style="padding:6px 10px;border:1px solid #ddd;text-align:right;">{euro(f['incasso_totale'])}</td>
@@ -184,19 +229,22 @@ def render_html(report, week_start, week_end, covered_days):
             <th style="padding:6px 10px;border:1px solid #1f3a5f;">Distribuzione</th>
             <th style="padding:6px 10px;border:1px solid #1f3a5f;">Incasso weekend (gio-dom)</th>
             <th style="padding:6px 10px;border:1px solid #1f3a5f;">Presenze weekend (gio-dom)</th>
+            <th style="padding:6px 10px;border:1px solid #1f3a5f;">Schermi<br>(media per sala)</th>
             <th style="padding:6px 10px;border:1px solid #1f3a5f;">Incasso settimana</th>
             <th style="padding:6px 10px;border:1px solid #1f3a5f;">Presenze settimana</th>
             <th style="padding:6px 10px;border:1px solid #1f3a5f;">Incasso totale dall'uscita*</th>
           </tr>
         </thead>
         <tbody>
-          {rows_html if rows_html else '<tr><td colspan="8" style="padding:10px;">Nessun dato disponibile per questa settimana.</td></tr>'}
+          {rows_html if rows_html else '<tr><td colspan="9" style="padding:10px;">Nessun dato disponibile per questa settimana.</td></tr>'}
         </tbody>
       </table>
       <p style="font-size:11px;color:#888;margin-top:12px;">
         * "Incasso totale dall'uscita" è il dato ufficiale pubblicato da Cinetel per ogni film
         (colonna "Incasso al [data]"), preso al giorno più recente disponibile in questa settimana —
-        non un cumulato calcolato da noi.
+        non un cumulato calcolato da noi.<br>
+        Schermi: dato ComingSoon del weekend gio-dom; "media" = incasso weekend (Cinetel) / schermi.
+        "n.d." = film non trovato nella classifica ComingSoon o dato non ancora pubblicato.
       </p>
     </body></html>
     """
@@ -228,6 +276,7 @@ def main():
     rows = load_rows()
     covered_days = days_covered(rows, week_start, week_end)
     report = build_report(rows, week_start, week_end)
+    report = attach_schermi(report, week_end)
 
     html = render_html(report, week_start, week_end, covered_days)
     subject = f"Cinetel – Report settimanale ({week_start.strftime('%d/%m')} – {week_end.strftime('%d/%m/%Y')})"
