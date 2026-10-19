@@ -2,8 +2,6 @@ name: Cinetel daily scrape
 
 on:
   schedule:
-    # Ogni giorno alle 05:30 UTC (07:30 a Roma in ora legale, 06:30 in ora solare).
-    # Salva i dati del giorno precedente, ormai definitivi.
     - cron: "30 5 * * *"
   workflow_dispatch: {}
 
@@ -29,6 +27,12 @@ jobs:
 
       - name: Run scraper
         run: python scripts/scrape_cinetel.py
+
+      - name: Salva schermi per film (ComingSoon)
+        # Non deve mai far fallire lo scrape giornaliero: se la pagina cambia,
+        # il report mostra semplicemente "n.d." negli schermi.
+        continue-on-error: true
+        run: python scripts/scrape_schermi.py
 
       - name: Commit and push data
         run: |
