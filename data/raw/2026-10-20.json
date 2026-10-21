@@ -1,0 +1,116 @@
+{
+  "data_riferimento": "2026-10-20",
+  "scraped_at_utc": "2026-10-21T10:27:52+00:00",
+  "film": [
+    {
+      "pos": 1,
+      "titolo": "JE SO' PAZZO",
+      "prima_programmazione": "15/10/2026",
+      "nazione": "ITA",
+      "distribuzione": "01 DISTRIBUTION",
+      "incasso_eur": 154480.0,
+      "presenze": 20963,
+      "incasso_totale_eur": 1850248.0,
+      "presenze_totale": 235895
+    },
+    {
+      "pos": 2,
+      "titolo": "TRAINSPOTTING (RIED.)",
+      "prima_programmazione": "19/10/2026",
+      "nazione": "GBR",
+      "distribuzione": "ADLER ENTERTAINMENT",
+      "incasso_eur": 135243.0,
+      "presenze": 16361,
+      "incasso_totale_eur": 249137.0,
+      "presenze_totale": 29630
+    },
+    {
+      "pos": 3,
+      "titolo": "L'ESTRANEA",
+      "prima_programmazione": "08/10/2026",
+      "nazione": "COP",
+      "distribuzione": "01 DISTRIBUTION",
+      "incasso_eur": 80841.0,
+      "presenze": 11757,
+      "incasso_totale_eur": 2064706.0,
+      "presenze_totale": 287877
+    },
+    {
+      "pos": 4,
+      "titolo": "CARLO ACUTIS. IL GIOVANE SANTO",
+      "prima_programmazione": "15/10/2026",
+      "nazione": "ITA",
+      "distribuzione": "NEXO DIGITAL S.R.L.",
+      "incasso_eur": 72464.0,
+      "presenze": 8504,
+      "incasso_totale_eur": 502286.0,
+      "presenze_totale": 56613
+    },
+    {
+      "pos": 5,
+      "titolo": "MAMMINA (OTHER MOMMY)",
+      "prima_programmazione": "08/10/2026",
+      "nazione": "IRL",
+      "distribuzione": "UNIVERSAL",
+      "incasso_eur": 55746.0,
+      "presenze": 7190,
+      "incasso_totale_eur": 3410591.0,
+      "presenze_totale": 404963
+    },
+    {
+      "pos": 6,
+      "titolo": "PRIMETIME",
+      "prima_programmazione": "15/10/2026",
+      "nazione": "USA",
+      "distribuzione": "I WONDER PICTURES",
+      "incasso_eur": 50832.0,
+      "presenze": 7388,
+      "incasso_totale_eur": 549566.0,
+      "presenze_totale": 74309
+    },
+    {
+      "pos": 7,
+      "titolo": "WHALEFALL: NELLA BALENA",
+      "prima_programmazione": "15/10/2026",
+      "nazione": "USA",
+      "distribuzione": "WALT DISNEY S.M.P. ITALIA",
+      "incasso_eur": 33336.0,
+      "presenze": 4646,
+      "incasso_totale_eur": 441806.0,
+      "presenze_totale": 55839
+    },
+    {
+      "pos": 8,
+      "titolo": "STREET FIGHTER",
+      "prima_programmazione": "15/10/2026",
+      "nazione": "USA",
+      "distribuzione": "EAGLE PICTURES",
+      "incasso_eur": 32904.0,
+      "presenze": 4374,
+      "incasso_totale_eur": 453231.0,
+      "presenze_totale": 54729
+    },
+    {
+      "pos": 9,
+      "titolo": "ZUSTISSIA",
+      "prima_programmazione": "08/10/2026",
+      "nazione": "ITA",
+      "distribuzione": "PIPER FILM",
+      "incasso_eur": 30678.0,
+      "presenze": 4854,
+      "incasso_totale_eur": 436913.0,
+      "presenze_totale": 61298
+    },
+    {
+      "pos": 10,
+      "titolo": "NAZA",
+      "prima_programmazione": "28/09/2026",
+      "nazione": "GBR",
+      "distribuzione": "I WONDER PICTURES",
+      "incasso_eur": 27808.0,
+      "presenze": 3843,
+      "incasso_totale_eur": 5170168.0,
+      "presenze_totale": 680181
+    }
+  ]
+}
