@@ -1,0 +1,72 @@
+{
+  "data_riferimento": "2026-10-21",
+  "scraped_at_utc": "2026-10-22T10:27:08+00:00",
+  "film": [
+    {
+      "pos": 1,
+      "titolo": "JE SO' PAZZO",
+      "prima_programmazione": "15/10/2026",
+      "nazione": "ITA",
+      "distribuzione": "01 DISTRIBUTION",
+      "incasso_eur": 167536.0,
+      "presenze": 24285,
+      "incasso_totale_eur": 2018972.0,
+      "presenze_totale": 260397
+    },
+    {
+      "pos": 2,
+      "titolo": "TRAINSPOTTING (RIED.)",
+      "prima_programmazione": "19/10/2026",
+      "nazione": "GBR",
+      "distribuzione": "ADLER ENTERTAINMENT",
+      "incasso_eur": 141491.0,
+      "presenze": 17635,
+      "incasso_totale_eur": 391930.0,
+      "presenze_totale": 47405
+    },
+    {
+      "pos": 3,
+      "titolo": "L'ESTRANEA",
+      "prima_programmazione": "08/10/2026",
+      "nazione": "COP",
+      "distribuzione": "01 DISTRIBUTION",
+      "incasso_eur": 86125.0,
+      "presenze": 13462,
+      "incasso_totale_eur": 2151034.0,
+      "presenze_totale": 301374
+    },
+    {
+      "pos": 4,
+      "titolo": "CARLO ACUTIS. IL GIOVANE SANTO",
+      "prima_programmazione": "15/10/2026",
+      "nazione": "ITA",
+      "distribuzione": "NEXO DIGITAL S.R.L.",
+      "incasso_eur": 70854.0,
+      "presenze": 7960,
+      "incasso_totale_eur": 572470.0,
+      "presenze_totale": 64475
+    },
+    {
+      "pos": 5,
+      "titolo": "MAMMINA (OTHER MOMMY)",
+      "prima_programmazione": "08/10/2026",
+      "nazione": "IRL",
+      "distribuzione": "UNIVERSAL",
+      "incasso_eur": 59317.0,
+      "presenze": 7944,
+      "incasso_totale_eur": 3470363.0,
+      "presenze_totale": 412961
+    },
+    {
+      "pos": 6,
+      "titolo": "PRIMETIME",
+      "prima_programmazione": "15/10/2026",
+      "nazione": "USA",
+      "distribuzione": "I WONDER PICTURES",
+      "incasso_eur": 55543.0,
+      "presenze": 8402,
+      "incasso_totale_eur": 605317.0,
+      "presenze_totale": 82738
+    }
+  ]
+}
