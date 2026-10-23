@@ -1,0 +1,116 @@
+{
+  "data_riferimento": "2026-10-22",
+  "scraped_at_utc": "2026-10-23T10:24:14+00:00",
+  "film": [
+    {
+      "pos": 1,
+      "titolo": "JE SO' PAZZO",
+      "prima_programmazione": "15/10/2026",
+      "nazione": "ITA",
+      "distribuzione": "01 DISTRIBUTION",
+      "incasso_eur": 104502.0,
+      "presenze": 14079,
+      "incasso_totale_eur": 2130969.0,
+      "presenze_totale": 275455
+    },
+    {
+      "pos": 2,
+      "titolo": "CLAYFACE",
+      "prima_programmazione": "22/10/2026",
+      "nazione": "GBR",
+      "distribuzione": "WARNER BROS. ITALIA",
+      "incasso_eur": 100546.0,
+      "presenze": 13373,
+      "incasso_totale_eur": 139468.0,
+      "presenze_totale": 18505
+    },
+    {
+      "pos": 3,
+      "titolo": "RAGIONE E SENTIMENTO (SENSE AND SENSIBILITY)",
+      "prima_programmazione": "22/10/2026",
+      "nazione": "GBR",
+      "distribuzione": "UNIVERSAL",
+      "incasso_eur": 70261.0,
+      "presenze": 9491,
+      "incasso_totale_eur": 77857.0,
+      "presenze_totale": 10504
+    },
+    {
+      "pos": 4,
+      "titolo": "L'ESTRANEA",
+      "prima_programmazione": "08/10/2026",
+      "nazione": "COP",
+      "distribuzione": "01 DISTRIBUTION",
+      "incasso_eur": 58332.0,
+      "presenze": 8099,
+      "incasso_totale_eur": 2210840.0,
+      "presenze_totale": 309682
+    },
+    {
+      "pos": 5,
+      "titolo": "WILDWOOD – I SEGRETI DEL BOSCO PROIBITO",
+      "prima_programmazione": "22/10/2026",
+      "nazione": "USA",
+      "distribuzione": "NOTORIOUS PICTURES",
+      "incasso_eur": 39458.0,
+      "presenze": 5687,
+      "incasso_totale_eur": 39458.0,
+      "presenze_totale": 5687
+    },
+    {
+      "pos": 6,
+      "titolo": "MAMMINA (OTHER MOMMY)",
+      "prima_programmazione": "08/10/2026",
+      "nazione": "IRL",
+      "distribuzione": "UNIVERSAL",
+      "incasso_eur": 34579.0,
+      "presenze": 4218,
+      "incasso_totale_eur": 3506315.0,
+      "presenze_totale": 417360
+    },
+    {
+      "pos": 7,
+      "titolo": "PRIMETIME",
+      "prima_programmazione": "15/10/2026",
+      "nazione": "USA",
+      "distribuzione": "I WONDER PICTURES",
+      "incasso_eur": 26405.0,
+      "presenze": 3566,
+      "incasso_totale_eur": 633588.0,
+      "presenze_totale": 86615
+    },
+    {
+      "pos": 8,
+      "titolo": "ZUSTISSIA",
+      "prima_programmazione": "08/10/2026",
+      "nazione": "ITA",
+      "distribuzione": "PIPER FILM",
+      "incasso_eur": 18315.0,
+      "presenze": 2592,
+      "incasso_totale_eur": 490060.0,
+      "presenze_totale": 69302
+    },
+    {
+      "pos": 9,
+      "titolo": "FATHERLAND",
+      "prima_programmazione": "16/10/2026",
+      "nazione": "COP",
+      "distribuzione": "MUBI",
+      "incasso_eur": 16175.0,
+      "presenze": 2493,
+      "incasso_totale_eur": 276075.0,
+      "presenze_totale": 40899
+    },
+    {
+      "pos": 10,
+      "titolo": "STREET FIGHTER",
+      "prima_programmazione": "15/10/2026",
+      "nazione": "USA",
+      "distribuzione": "EAGLE PICTURES",
+      "incasso_eur": 13827.0,
+      "presenze": 1700,
+      "incasso_totale_eur": 501782.0,
+      "presenze_totale": 61194
+    }
+  ]
+}
