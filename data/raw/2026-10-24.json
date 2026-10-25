@@ -1,0 +1,116 @@
+{
+  "data_riferimento": "2026-10-24",
+  "scraped_at_utc": "2026-10-25T10:00:41+00:00",
+  "film": [
+    {
+      "pos": 1,
+      "titolo": "JE SO' PAZZO",
+      "prima_programmazione": "15/10/2026",
+      "nazione": "ITA",
+      "distribuzione": "01 DISTRIBUTION",
+      "incasso_eur": 332648.0,
+      "presenze": 41616,
+      "incasso_totale_eur": 2650345.0,
+      "presenze_totale": 341266
+    },
+    {
+      "pos": 2,
+      "titolo": "CLAYFACE",
+      "prima_programmazione": "22/10/2026",
+      "nazione": "GBR",
+      "distribuzione": "WARNER BROS. ITALIA",
+      "incasso_eur": 268955.0,
+      "presenze": 31367,
+      "incasso_totale_eur": 574248.0,
+      "presenze_totale": 69942
+    },
+    {
+      "pos": 3,
+      "titolo": "RAGIONE E SENTIMENTO (SENSE AND SENSIBILITY)",
+      "prima_programmazione": "22/10/2026",
+      "nazione": "GBR",
+      "distribuzione": "UNIVERSAL",
+      "incasso_eur": 237151.0,
+      "presenze": 29643,
+      "incasso_totale_eur": 434532.0,
+      "presenze_totale": 55612
+    },
+    {
+      "pos": 4,
+      "titolo": "L'ESTRANEA",
+      "prima_programmazione": "08/10/2026",
+      "nazione": "COP",
+      "distribuzione": "01 DISTRIBUTION",
+      "incasso_eur": 209219.0,
+      "presenze": 26856,
+      "incasso_totale_eur": 2520002.0,
+      "presenze_totale": 349980
+    },
+    {
+      "pos": 5,
+      "titolo": "MAMMINA (OTHER MOMMY)",
+      "prima_programmazione": "08/10/2026",
+      "nazione": "IRL",
+      "distribuzione": "UNIVERSAL",
+      "incasso_eur": 154052.0,
+      "presenze": 17337,
+      "incasso_totale_eur": 3740576.0,
+      "presenze_totale": 443882
+    },
+    {
+      "pos": 6,
+      "titolo": "WILDWOOD – I SEGRETI DEL BOSCO PROIBITO",
+      "prima_programmazione": "22/10/2026",
+      "nazione": "USA",
+      "distribuzione": "NOTORIOUS PICTURES",
+      "incasso_eur": 126913.0,
+      "presenze": 16594,
+      "incasso_totale_eur": 221683.0,
+      "presenze_totale": 29776
+    },
+    {
+      "pos": 7,
+      "titolo": "PRIMETIME",
+      "prima_programmazione": "15/10/2026",
+      "nazione": "USA",
+      "distribuzione": "I WONDER PICTURES",
+      "incasso_eur": 82372.0,
+      "presenze": 10178,
+      "incasso_totale_eur": 764081.0,
+      "presenze_totale": 102982
+    },
+    {
+      "pos": 8,
+      "titolo": "FATHERLAND",
+      "prima_programmazione": "16/10/2026",
+      "nazione": "COP",
+      "distribuzione": "MUBI",
+      "incasso_eur": 68487.0,
+      "presenze": 9676,
+      "incasso_totale_eur": 376794.0,
+      "presenze_totale": 55399
+    },
+    {
+      "pos": 9,
+      "titolo": "ZUSTISSIA",
+      "prima_programmazione": "08/10/2026",
+      "nazione": "ITA",
+      "distribuzione": "PIPER FILM",
+      "incasso_eur": 64055.0,
+      "presenze": 8750,
+      "incasso_totale_eur": 580741.0,
+      "presenze_totale": 81843
+    },
+    {
+      "pos": 10,
+      "titolo": "HEART OF THE BEAST - NEL PROFONDO SELVAGGIO",
+      "prima_programmazione": "24/09/2026",
+      "nazione": "USA",
+      "distribuzione": "EAGLE PICTURES",
+      "incasso_eur": 55697.0,
+      "presenze": 6582,
+      "incasso_totale_eur": 3479946.0,
+      "presenze_totale": 459145
+    }
+  ]
+}
