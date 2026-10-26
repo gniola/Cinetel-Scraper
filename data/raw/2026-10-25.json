@@ -1,0 +1,116 @@
+{
+  "data_riferimento": "2026-10-25",
+  "scraped_at_utc": "2026-10-26T11:24:20+00:00",
+  "film": [
+    {
+      "pos": 1,
+      "titolo": "JE SO' PAZZO",
+      "prima_programmazione": "15/10/2026",
+      "nazione": "ITA",
+      "distribuzione": "01 DISTRIBUTION",
+      "incasso_eur": 405680.0,
+      "presenze": 50863,
+      "incasso_totale_eur": 3060052.0,
+      "presenze_totale": 392680
+    },
+    {
+      "pos": 2,
+      "titolo": "RAGIONE E SENTIMENTO (SENSE AND SENSIBILITY)",
+      "prima_programmazione": "22/10/2026",
+      "nazione": "GBR",
+      "distribuzione": "UNIVERSAL",
+      "incasso_eur": 262072.0,
+      "presenze": 33487,
+      "incasso_totale_eur": 699364.0,
+      "presenze_totale": 89444
+    },
+    {
+      "pos": 3,
+      "titolo": "BTS WORLD TOUR 'ARIRANG' IN BUENOS AIRES: LIVE VIEWING",
+      "prima_programmazione": "25/10/2026",
+      "nazione": "KOR",
+      "distribuzione": "NEXO DIGITAL S.R.L.",
+      "incasso_eur": 258319.0,
+      "presenze": 11326,
+      "incasso_totale_eur": 258381.0,
+      "presenze_totale": 11330
+    },
+    {
+      "pos": 4,
+      "titolo": "L'ESTRANEA",
+      "prima_programmazione": "08/10/2026",
+      "nazione": "COP",
+      "distribuzione": "01 DISTRIBUTION",
+      "incasso_eur": 211144.0,
+      "presenze": 27398,
+      "incasso_totale_eur": 2733782.0,
+      "presenze_totale": 377691
+    },
+    {
+      "pos": 5,
+      "titolo": "CLAYFACE",
+      "prima_programmazione": "22/10/2026",
+      "nazione": "GBR",
+      "distribuzione": "WARNER BROS. ITALIA",
+      "incasso_eur": 198039.0,
+      "presenze": 23226,
+      "incasso_totale_eur": 776253.0,
+      "presenze_totale": 93614
+    },
+    {
+      "pos": 6,
+      "titolo": "WILDWOOD – I SEGRETI DEL BOSCO PROIBITO",
+      "prima_programmazione": "22/10/2026",
+      "nazione": "USA",
+      "distribuzione": "NOTORIOUS PICTURES",
+      "incasso_eur": 134546.0,
+      "presenze": 17485,
+      "incasso_totale_eur": 357721.0,
+      "presenze_totale": 47439
+    },
+    {
+      "pos": 7,
+      "titolo": "MAMMINA (OTHER MOMMY)",
+      "prima_programmazione": "08/10/2026",
+      "nazione": "IRL",
+      "distribuzione": "UNIVERSAL",
+      "incasso_eur": 96585.0,
+      "presenze": 10930,
+      "incasso_totale_eur": 3838972.0,
+      "presenze_totale": 455006
+    },
+    {
+      "pos": 8,
+      "titolo": "FATHERLAND",
+      "prima_programmazione": "16/10/2026",
+      "nazione": "COP",
+      "distribuzione": "MUBI",
+      "incasso_eur": 81764.0,
+      "presenze": 11590,
+      "incasso_totale_eur": 458558.0,
+      "presenze_totale": 66989
+    },
+    {
+      "pos": 9,
+      "titolo": "ZUSTISSIA",
+      "prima_programmazione": "08/10/2026",
+      "nazione": "ITA",
+      "distribuzione": "PIPER FILM",
+      "incasso_eur": 79578.0,
+      "presenze": 10971,
+      "incasso_totale_eur": 660526.0,
+      "presenze_totale": 92845
+    },
+    {
+      "pos": 10,
+      "titolo": "TADDEO L'ESPLORATORE E LA LAMPADA MAGICA",
+      "prima_programmazione": "22/10/2026",
+      "nazione": "ESP",
+      "distribuzione": "EAGLE PICTURES",
+      "incasso_eur": 72540.0,
+      "presenze": 9929,
+      "incasso_totale_eur": 137012.0,
+      "presenze_totale": 18988
+    }
+  ]
+}
