@@ -1,0 +1,116 @@
+{
+  "data_riferimento": "2026-10-26",
+  "scraped_at_utc": "2026-10-27T10:47:57+00:00",
+  "film": [
+    {
+      "pos": 1,
+      "titolo": "JE SO' PAZZO",
+      "prima_programmazione": "15/10/2026",
+      "nazione": "ITA",
+      "distribuzione": "01 DISTRIBUTION",
+      "incasso_eur": 72248.0,
+      "presenze": 9873,
+      "incasso_totale_eur": 3135943.0,
+      "presenze_totale": 403130
+    },
+    {
+      "pos": 2,
+      "titolo": "CLAYFACE",
+      "prima_programmazione": "22/10/2026",
+      "nazione": "GBR",
+      "distribuzione": "WARNER BROS. ITALIA",
+      "incasso_eur": 72177.0,
+      "presenze": 9613,
+      "incasso_totale_eur": 850088.0,
+      "presenze_totale": 103445
+    },
+    {
+      "pos": 3,
+      "titolo": "RAGIONE E SENTIMENTO (SENSE AND SENSIBILITY)",
+      "prima_programmazione": "22/10/2026",
+      "nazione": "GBR",
+      "distribuzione": "UNIVERSAL",
+      "incasso_eur": 65294.0,
+      "presenze": 9400,
+      "incasso_totale_eur": 767217.0,
+      "presenze_totale": 99167
+    },
+    {
+      "pos": 4,
+      "titolo": "MATRIX 4K",
+      "prima_programmazione": "26/10/2026",
+      "nazione": "USA",
+      "distribuzione": "NEXO DIGITAL S.R.L.",
+      "incasso_eur": 51389.0,
+      "presenze": 5514,
+      "incasso_totale_eur": 51389.0,
+      "presenze_totale": 5514
+    },
+    {
+      "pos": 5,
+      "titolo": "L'ESTRANEA",
+      "prima_programmazione": "08/10/2026",
+      "nazione": "COP",
+      "distribuzione": "01 DISTRIBUTION",
+      "incasso_eur": 48375.0,
+      "presenze": 6961,
+      "incasso_totale_eur": 2783271.0,
+      "presenze_totale": 384811
+    },
+    {
+      "pos": 6,
+      "titolo": "WILDWOOD – I SEGRETI DEL BOSCO PROIBITO",
+      "prima_programmazione": "22/10/2026",
+      "nazione": "USA",
+      "distribuzione": "NOTORIOUS PICTURES",
+      "incasso_eur": 41735.0,
+      "presenze": 6002,
+      "incasso_totale_eur": 401662.0,
+      "presenze_totale": 53749
+    },
+    {
+      "pos": 7,
+      "titolo": "MAMMINA (OTHER MOMMY)",
+      "prima_programmazione": "08/10/2026",
+      "nazione": "IRL",
+      "distribuzione": "UNIVERSAL",
+      "incasso_eur": 26836.0,
+      "presenze": 3173,
+      "incasso_totale_eur": 3866566.0,
+      "presenze_totale": 458273
+    },
+    {
+      "pos": 8,
+      "titolo": "PRIMETIME",
+      "prima_programmazione": "15/10/2026",
+      "nazione": "USA",
+      "distribuzione": "I WONDER PICTURES",
+      "incasso_eur": 19667.0,
+      "presenze": 2826,
+      "incasso_totale_eur": 846307.0,
+      "presenze_totale": 113653
+    },
+    {
+      "pos": 9,
+      "titolo": "FATHERLAND",
+      "prima_programmazione": "16/10/2026",
+      "nazione": "COP",
+      "distribuzione": "MUBI",
+      "incasso_eur": 15823.0,
+      "presenze": 2468,
+      "incasso_totale_eur": 475198.0,
+      "presenze_totale": 69568
+    },
+    {
+      "pos": 10,
+      "titolo": "NAZA",
+      "prima_programmazione": "28/09/2026",
+      "nazione": "GBR",
+      "distribuzione": "I WONDER PICTURES",
+      "incasso_eur": 13931.0,
+      "presenze": 2363,
+      "incasso_totale_eur": 5308233.0,
+      "presenze_totale": 699724
+    }
+  ]
+}
