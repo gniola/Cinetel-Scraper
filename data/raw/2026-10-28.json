@@ -1,0 +1,105 @@
+{
+  "data_riferimento": "2026-10-28",
+  "scraped_at_utc": "2026-10-29T11:40:45+00:00",
+  "film": [
+    {
+      "pos": 1,
+      "titolo": "RAGIONE E SENTIMENTO (SENSE AND SENSIBILITY)",
+      "prima_programmazione": "22/10/2026",
+      "nazione": "GBR",
+      "distribuzione": "UNIVERSAL",
+      "incasso_eur": 93254.0,
+      "presenze": 14288,
+      "incasso_totale_eur": 947231.0,
+      "presenze_totale": 126003
+    },
+    {
+      "pos": 2,
+      "titolo": "JE SO' PAZZO",
+      "prima_programmazione": "15/10/2026",
+      "nazione": "ITA",
+      "distribuzione": "01 DISTRIBUTION",
+      "incasso_eur": 81635.0,
+      "presenze": 12149,
+      "incasso_totale_eur": 3305744.0,
+      "presenze_totale": 427579
+    },
+    {
+      "pos": 3,
+      "titolo": "OZZY & BLACK SABBATH: BACK TO THE BEGINNING",
+      "prima_programmazione": "28/10/2026",
+      "nazione": "GBR",
+      "distribuzione": "NEXO DIGITAL S.R.L.",
+      "incasso_eur": 68071.0,
+      "presenze": 4757,
+      "incasso_totale_eur": 68071.0,
+      "presenze_totale": 4757
+    },
+    {
+      "pos": 4,
+      "titolo": "CLAYFACE",
+      "prima_programmazione": "22/10/2026",
+      "nazione": "GBR",
+      "distribuzione": "WARNER BROS. ITALIA",
+      "incasso_eur": 65713.0,
+      "presenze": 9287,
+      "incasso_totale_eur": 988794.0,
+      "presenze_totale": 122631
+    },
+    {
+      "pos": 5,
+      "titolo": "L'ESTRANEA",
+      "prima_programmazione": "08/10/2026",
+      "nazione": "COP",
+      "distribuzione": "01 DISTRIBUTION",
+      "incasso_eur": 53575.0,
+      "presenze": 8324,
+      "incasso_totale_eur": 2895060.0,
+      "presenze_totale": 401539
+    },
+    {
+      "pos": 6,
+      "titolo": "WILDWOOD – I SEGRETI DEL BOSCO PROIBITO",
+      "prima_programmazione": "22/10/2026",
+      "nazione": "USA",
+      "distribuzione": "NOTORIOUS PICTURES",
+      "incasso_eur": 51761.0,
+      "presenze": 7757,
+      "incasso_totale_eur": 509611.0,
+      "presenze_totale": 69666
+    },
+    {
+      "pos": 7,
+      "titolo": "MATRIX 4K",
+      "prima_programmazione": "26/10/2026",
+      "nazione": "USA",
+      "distribuzione": "NEXO DIGITAL S.R.L.",
+      "incasso_eur": 51443.0,
+      "presenze": 5599,
+      "incasso_totale_eur": 155149.0,
+      "presenze_totale": 16808
+    },
+    {
+      "pos": 8,
+      "titolo": "IT ENDS",
+      "prima_programmazione": "28/10/2026",
+      "nazione": "USA",
+      "distribuzione": "I WONDER PICTURES",
+      "incasso_eur": 32823.0,
+      "presenze": 4445,
+      "incasso_totale_eur": 33974.0,
+      "presenze_totale": 4604
+    },
+    {
+      "pos": 9,
+      "titolo": "SHAUN VITA DA PECORA - OPERAZIONE Z.U.C.C.A",
+      "prima_programmazione": "28/10/2026",
+      "nazione": "GBR",
+      "distribuzione": "LUCKY RED DISTRIBUZIONE",
+      "incasso_eur": 29192.0,
+      "presenze": 4209,
+      "incasso_totale_eur": 29192.0,
+      "presenze_totale": 4209
+    }
+  ]
+}
