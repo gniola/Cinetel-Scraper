@@ -1,0 +1,116 @@
+{
+  "data_riferimento": "2026-10-29",
+  "scraped_at_utc": "2026-10-30T11:32:06+00:00",
+  "film": [
+    {
+      "pos": 1,
+      "titolo": "FAST & FURIOUS – 25TH ANNIVERSARY",
+      "prima_programmazione": "29/10/2026",
+      "nazione": "USA",
+      "distribuzione": "UNIVERSAL",
+      "incasso_eur": 118462.0,
+      "presenze": 14143,
+      "incasso_totale_eur": 118515.0,
+      "presenze_totale": 14151
+    },
+    {
+      "pos": 2,
+      "titolo": "DIO RIDE",
+      "prima_programmazione": "29/10/2026",
+      "nazione": "ITA",
+      "distribuzione": "PIPER FILM",
+      "incasso_eur": 72254.0,
+      "presenze": 10811,
+      "incasso_totale_eur": 178114.0,
+      "presenze_totale": 25885
+    },
+    {
+      "pos": 3,
+      "titolo": "OZZY & BLACK SABBATH: BACK TO THE BEGINNING",
+      "prima_programmazione": "28/10/2026",
+      "nazione": "GBR",
+      "distribuzione": "NEXO DIGITAL S.R.L.",
+      "incasso_eur": 61313.0,
+      "presenze": 4235,
+      "incasso_totale_eur": 129383.0,
+      "presenze_totale": 8992
+    },
+    {
+      "pos": 4,
+      "titolo": "CLAYFACE",
+      "prima_programmazione": "22/10/2026",
+      "nazione": "GBR",
+      "distribuzione": "WARNER BROS. ITALIA",
+      "incasso_eur": 51338.0,
+      "presenze": 6671,
+      "incasso_totale_eur": 1040160.0,
+      "presenze_totale": 129306
+    },
+    {
+      "pos": 5,
+      "titolo": "UN TRANQUILLO FUNERALE DI FAMIGLIA",
+      "prima_programmazione": "29/10/2026",
+      "nazione": "ITA",
+      "distribuzione": "01 DISTRIBUTION",
+      "incasso_eur": 49672.0,
+      "presenze": 7148,
+      "incasso_totale_eur": 56675.0,
+      "presenze_totale": 8067
+    },
+    {
+      "pos": 6,
+      "titolo": "ICE CREAM MAN",
+      "prima_programmazione": "29/10/2026",
+      "nazione": "USA",
+      "distribuzione": "PLAION PICTURES",
+      "incasso_eur": 49316.0,
+      "presenze": 6360,
+      "incasso_totale_eur": 49316.0,
+      "presenze_totale": 6360
+    },
+    {
+      "pos": 7,
+      "titolo": "JE SO' PAZZO",
+      "prima_programmazione": "15/10/2026",
+      "nazione": "ITA",
+      "distribuzione": "01 DISTRIBUTION",
+      "incasso_eur": 45630.0,
+      "presenze": 6034,
+      "incasso_totale_eur": 3351628.0,
+      "presenze_totale": 433650
+    },
+    {
+      "pos": 8,
+      "titolo": "RAGIONE E SENTIMENTO (SENSE AND SENSIBILITY)",
+      "prima_programmazione": "22/10/2026",
+      "nazione": "GBR",
+      "distribuzione": "UNIVERSAL",
+      "incasso_eur": 45392.0,
+      "presenze": 6185,
+      "incasso_totale_eur": 993224.0,
+      "presenze_totale": 132274
+    },
+    {
+      "pos": 9,
+      "titolo": "L'ESTRANEA",
+      "prima_programmazione": "08/10/2026",
+      "nazione": "COP",
+      "distribuzione": "01 DISTRIBUTION",
+      "incasso_eur": 35511.0,
+      "presenze": 4908,
+      "incasso_totale_eur": 2930821.0,
+      "presenze_totale": 406481
+    },
+    {
+      "pos": 10,
+      "titolo": "QUELLO CHE RESTA DI NOI",
+      "prima_programmazione": "21/10/2026",
+      "nazione": "ITA",
+      "distribuzione": "LINFA CROWD 2.0",
+      "incasso_eur": 31632.0,
+      "presenze": 4196,
+      "incasso_totale_eur": 39171.0,
+      "presenze_totale": 5486
+    }
+  ]
+}
