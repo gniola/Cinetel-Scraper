@@ -1,0 +1,116 @@
+{
+  "data_riferimento": "2026-10-30",
+  "scraped_at_utc": "2026-10-31T11:03:47+00:00",
+  "film": [
+    {
+      "pos": 1,
+      "titolo": "DIO RIDE",
+      "prima_programmazione": "29/10/2026",
+      "nazione": "ITA",
+      "distribuzione": "PIPER FILM",
+      "incasso_eur": 145766.0,
+      "presenze": 21263,
+      "incasso_totale_eur": 324096.0,
+      "presenze_totale": 47179
+    },
+    {
+      "pos": 2,
+      "titolo": "UN TRANQUILLO FUNERALE DI FAMIGLIA",
+      "prima_programmazione": "29/10/2026",
+      "nazione": "ITA",
+      "distribuzione": "01 DISTRIBUTION",
+      "incasso_eur": 108115.0,
+      "presenze": 14775,
+      "incasso_totale_eur": 164839.0,
+      "presenze_totale": 22849
+    },
+    {
+      "pos": 3,
+      "titolo": "FAST & FURIOUS – 25TH ANNIVERSARY",
+      "prima_programmazione": "29/10/2026",
+      "nazione": "USA",
+      "distribuzione": "UNIVERSAL",
+      "incasso_eur": 103897.0,
+      "presenze": 11732,
+      "incasso_totale_eur": 222576.0,
+      "presenze_totale": 25904
+    },
+    {
+      "pos": 4,
+      "titolo": "CLAYFACE",
+      "prima_programmazione": "22/10/2026",
+      "nazione": "GBR",
+      "distribuzione": "WARNER BROS. ITALIA",
+      "incasso_eur": 87210.0,
+      "presenze": 10690,
+      "incasso_totale_eur": 1127488.0,
+      "presenze_totale": 140014
+    },
+    {
+      "pos": 5,
+      "titolo": "ICE CREAM MAN",
+      "prima_programmazione": "29/10/2026",
+      "nazione": "USA",
+      "distribuzione": "PLAION PICTURES",
+      "incasso_eur": 81668.0,
+      "presenze": 9767,
+      "incasso_totale_eur": 131246.0,
+      "presenze_totale": 16162
+    },
+    {
+      "pos": 6,
+      "titolo": "RAGIONE E SENTIMENTO (SENSE AND SENSIBILITY)",
+      "prima_programmazione": "22/10/2026",
+      "nazione": "GBR",
+      "distribuzione": "UNIVERSAL",
+      "incasso_eur": 73498.0,
+      "presenze": 9450,
+      "incasso_totale_eur": 1066766.0,
+      "presenze_totale": 141731
+    },
+    {
+      "pos": 7,
+      "titolo": "DRACULA DI BRAM STOKER 4K (RIED. 2026)",
+      "prima_programmazione": "30/10/2026",
+      "nazione": "USA",
+      "distribuzione": "LUCKY RED DISTRIBUZIONE",
+      "incasso_eur": 73322.0,
+      "presenze": 8680,
+      "incasso_totale_eur": 73710.0,
+      "presenze_totale": 8733
+    },
+    {
+      "pos": 8,
+      "titolo": "JE SO' PAZZO",
+      "prima_programmazione": "15/10/2026",
+      "nazione": "ITA",
+      "distribuzione": "01 DISTRIBUTION",
+      "incasso_eur": 71428.0,
+      "presenze": 9170,
+      "incasso_totale_eur": 3423251.0,
+      "presenze_totale": 442847
+    },
+    {
+      "pos": 9,
+      "titolo": "L'ESTRANEA",
+      "prima_programmazione": "08/10/2026",
+      "nazione": "COP",
+      "distribuzione": "01 DISTRIBUTION",
+      "incasso_eur": 58741.0,
+      "presenze": 7698,
+      "incasso_totale_eur": 2989640.0,
+      "presenze_totale": 414193
+    },
+    {
+      "pos": 10,
+      "titolo": "IT ENDS",
+      "prima_programmazione": "28/10/2026",
+      "nazione": "USA",
+      "distribuzione": "I WONDER PICTURES",
+      "incasso_eur": 58741.0,
+      "presenze": 7262,
+      "incasso_totale_eur": 123711.0,
+      "presenze_totale": 16012
+    }
+  ]
+}
