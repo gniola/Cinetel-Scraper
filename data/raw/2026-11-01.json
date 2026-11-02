@@ -1,0 +1,61 @@
+{
+  "data_riferimento": "2026-11-01",
+  "scraped_at_utc": "2026-11-02T13:44:50+00:00",
+  "film": [
+    {
+      "pos": 1,
+      "titolo": "DIO RIDE",
+      "prima_programmazione": "29/10/2026",
+      "nazione": "ITA",
+      "distribuzione": "PIPER FILM",
+      "incasso_eur": 513347.0,
+      "presenze": 71295,
+      "incasso_totale_eur": 1233959.0,
+      "presenze_totale": 172708
+    },
+    {
+      "pos": 2,
+      "titolo": "UN TRANQUILLO FUNERALE DI FAMIGLIA",
+      "prima_programmazione": "29/10/2026",
+      "nazione": "ITA",
+      "distribuzione": "01 DISTRIBUTION",
+      "incasso_eur": 333137.0,
+      "presenze": 43510,
+      "incasso_totale_eur": 771075.0,
+      "presenze_totale": 101669
+    },
+    {
+      "pos": 3,
+      "titolo": "SHAUN VITA DA PECORA - OPERAZIONE Z.U.C.C.A",
+      "prima_programmazione": "28/10/2026",
+      "nazione": "GBR",
+      "distribuzione": "LUCKY RED DISTRIBUZIONE",
+      "incasso_eur": 246043.0,
+      "presenze": 32079,
+      "incasso_totale_eur": 464180.0,
+      "presenze_totale": 61889
+    },
+    {
+      "pos": 4,
+      "titolo": "RAGIONE E SENTIMENTO (SENSE AND SENSIBILITY)",
+      "prima_programmazione": "22/10/2026",
+      "nazione": "GBR",
+      "distribuzione": "UNIVERSAL",
+      "incasso_eur": 153723.0,
+      "presenze": 19424,
+      "incasso_totale_eur": 1326308.0,
+      "presenze_totale": 174318
+    },
+    {
+      "pos": 5,
+      "titolo": "JE SO' PAZZO",
+      "prima_programmazione": "15/10/2026",
+      "nazione": "ITA",
+      "distribuzione": "01 DISTRIBUTION",
+      "incasso_eur": 147189.0,
+      "presenze": 18145,
+      "incasso_totale_eur": 3678900.0,
+      "presenze_totale": 474350
+    }
+  ]
+}
