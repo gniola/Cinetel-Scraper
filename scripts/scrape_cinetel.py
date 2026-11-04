@@ -19,7 +19,8 @@ Distribuzione, Incasso (del giorno), Presenze (del giorno), Incasso al
 <data> (cumulato dall'uscita in sala), Presenze al <data> (cumulato).
 L'estrazione legge il testo della pagina riga per riga e riconosce un nuovo
 film quando trova: numero di posizione, poi titolo, poi una data
-gg/mm/aaaa (prima programmazione), poi un codice nazione in maiuscolo, ecc.
+gg/mm/aaaa (prima programmazione) oppure un trattino "-" quando Cinetel non
+ha la data, poi un codice nazione in maiuscolo, ecc.
 Questo è più robusto delle classi CSS (che framework come Angular possono
 rigenerare) perché si basa sul formato e sull'ordine dei dati, che Cinetel
 mantiene stabile.
@@ -88,20 +89,20 @@ def extract_rows(page_text: str):
         € 5.091.982
         650.830
 
-    cioè: Pos., Titolo, Prima Programmazione (gg/mm/aaaa), Nazione,
-    Distribuzione, Incasso del giorno, Presenze del giorno, Incasso totale
-    dall'uscita, Presenze totali dall'uscita.
+    cioè: Pos., Titolo, Prima Programmazione (gg/mm/aaaa, oppure "-" se
+    Cinetel non ha la data), Nazione, Distribuzione, Incasso del giorno,
+    Presenze del giorno, Incasso totale dall'uscita, Presenze totali.
     """
     pattern = re.compile(
-        r"^(\d+)\r?\n"                    # pos
-        r"(.+?)\r?\n"                     # titolo
-        r"(\d{2}/\d{2}/\d{4})\r?\n"       # prima programmazione
-        r"([A-Za-z]{2,4})\r?\n"           # nazione (codice)
-        r"(.+?)\r?\n"                     # distribuzione
-        r"€\s*([\d.,]+)\r?\n"             # incasso del giorno
-        r"([\d.,]+)\r?\n"                 # presenze del giorno
-        r"€\s*([\d.,]+)\r?\n"             # incasso totale dall'uscita
-        r"([\d.,]+)",                     # presenze totali dall'uscita
+        r"^(\d+)\r?\n"                                      # pos
+        r"(.+?)\r?\n"                                       # titolo
+        r"(\d{2}/\d{2}/\d{4}|[-–—]|N\.?D\.?)\r?\n"          # prima programmazione ("-" se manca la data)
+        r"([A-Za-z]{2,4})\r?\n"                             # nazione (codice)
+        r"(.+?)\r?\n"                                       # distribuzione
+        r"€\s*([\d.,]+)\r?\n"                               # incasso del giorno
+        r"([\d.,]+)\r?\n"                                   # presenze del giorno
+        r"€\s*([\d.,]+)\r?\n"                               # incasso totale dall'uscita
+        r"([\d.,]+)",                                       # presenze totali dall'uscita
         re.MULTILINE,
     )
     rows = []
