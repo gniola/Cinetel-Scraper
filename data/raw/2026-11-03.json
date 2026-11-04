@@ -1,0 +1,116 @@
+{
+  "data_riferimento": "2026-11-03",
+  "scraped_at_utc": "2026-11-04T16:35:51+00:00",
+  "film": [
+    {
+      "pos": 1,
+      "titolo": "SE DOMANI NON TORNO",
+      "prima_programmazione": "-",
+      "nazione": "ITA",
+      "distribuzione": "NOTORIOUS PICTURES",
+      "incasso_eur": 484019.0,
+      "presenze": 98184,
+      "incasso_totale_eur": 484019.0,
+      "presenze_totale": 98184
+    },
+    {
+      "pos": 2,
+      "titolo": "DIO RIDE",
+      "prima_programmazione": "29/10/2026",
+      "nazione": "ITA",
+      "distribuzione": "PIPER FILM",
+      "incasso_eur": 115920.0,
+      "presenze": 18286,
+      "incasso_totale_eur": 1458208.0,
+      "presenze_totale": 207721
+    },
+    {
+      "pos": 3,
+      "titolo": "UN TRANQUILLO FUNERALE DI FAMIGLIA",
+      "prima_programmazione": "29/10/2026",
+      "nazione": "ITA",
+      "distribuzione": "01 DISTRIBUTION",
+      "incasso_eur": 53830.0,
+      "presenze": 8218,
+      "incasso_totale_eur": 890460.0,
+      "presenze_totale": 119410
+    },
+    {
+      "pos": 4,
+      "titolo": "RAGIONE E SENTIMENTO (SENSE AND SENSIBILITY)",
+      "prima_programmazione": "22/10/2026",
+      "nazione": "GBR",
+      "distribuzione": "UNIVERSAL",
+      "incasso_eur": 48686.0,
+      "presenze": 7027,
+      "incasso_totale_eur": 1417712.0,
+      "presenze_totale": 187390
+    },
+    {
+      "pos": 5,
+      "titolo": "FAST & FURIOUS – 25TH ANNIVERSARY",
+      "prima_programmazione": "29/10/2026",
+      "nazione": "USA",
+      "distribuzione": "UNIVERSAL",
+      "incasso_eur": 37757.0,
+      "presenze": 4748,
+      "incasso_totale_eur": 500384.0,
+      "presenze_totale": 57418
+    },
+    {
+      "pos": 6,
+      "titolo": "JE SO' PAZZO",
+      "prima_programmazione": "15/10/2026",
+      "nazione": "ITA",
+      "distribuzione": "01 DISTRIBUTION",
+      "incasso_eur": 33484.0,
+      "presenze": 4688,
+      "incasso_totale_eur": 3753871.0,
+      "presenze_totale": 484630
+    },
+    {
+      "pos": 7,
+      "titolo": "WILDWOOD – I SEGRETI DEL BOSCO PROIBITO",
+      "prima_programmazione": "22/10/2026",
+      "nazione": "USA",
+      "distribuzione": "NOTORIOUS PICTURES",
+      "incasso_eur": 31983.0,
+      "presenze": 4568,
+      "incasso_totale_eur": 792849.0,
+      "presenze_totale": 106328
+    },
+    {
+      "pos": 8,
+      "titolo": "L'ESTRANEA",
+      "prima_programmazione": "08/10/2026",
+      "nazione": "COP",
+      "distribuzione": "01 DISTRIBUTION",
+      "incasso_eur": 31700.0,
+      "presenze": 4612,
+      "incasso_totale_eur": 3275261.0,
+      "presenze_totale": 450819
+    },
+    {
+      "pos": 9,
+      "titolo": "CLAYFACE",
+      "prima_programmazione": "22/10/2026",
+      "nazione": "GBR",
+      "distribuzione": "WARNER BROS. ITALIA",
+      "incasso_eur": 31608.0,
+      "presenze": 4423,
+      "incasso_totale_eur": 1513010.0,
+      "presenze_totale": 186111
+    },
+    {
+      "pos": 10,
+      "titolo": "ICE CREAM MAN",
+      "prima_programmazione": "29/10/2026",
+      "nazione": "USA",
+      "distribuzione": "PLAION PICTURES",
+      "incasso_eur": 26257.0,
+      "presenze": 3573,
+      "incasso_totale_eur": 533039.0,
+      "presenze_totale": 63446
+    }
+  ]
+}
