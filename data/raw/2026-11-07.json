@@ -1,0 +1,116 @@
+{
+  "data_riferimento": "2026-11-07",
+  "scraped_at_utc": "2026-11-08T12:06:11+00:00",
+  "film": [
+    {
+      "pos": 1,
+      "titolo": "STRAY KIDS WORLD TOUR <RUN IT> LIVE VIEWING",
+      "prima_programmazione": "07/11/2026",
+      "nazione": "KOR",
+      "distribuzione": "NEXO DIGITAL S.R.L.",
+      "incasso_eur": 502382.0,
+      "presenze": 23616,
+      "incasso_totale_eur": 502382.0,
+      "presenze_totale": 23616
+    },
+    {
+      "pos": 2,
+      "titolo": "DIO RIDE",
+      "prima_programmazione": "29/10/2026",
+      "nazione": "ITA",
+      "distribuzione": "PIPER FILM",
+      "incasso_eur": 441606.0,
+      "presenze": 59747,
+      "incasso_totale_eur": 2270563.0,
+      "presenze_totale": 323931
+    },
+    {
+      "pos": 3,
+      "titolo": "SE DOMANI NON TORNO",
+      "prima_programmazione": "05/11/2026",
+      "nazione": "ITA",
+      "distribuzione": "NOTORIOUS PICTURES",
+      "incasso_eur": 429462.0,
+      "presenze": 54276,
+      "incasso_totale_eur": 1380682.0,
+      "presenze_totale": 220302
+    },
+    {
+      "pos": 4,
+      "titolo": "WILD HORSE NINE",
+      "prima_programmazione": "05/11/2026",
+      "nazione": "USA",
+      "distribuzione": "WALT DISNEY S.M.P. ITALIA",
+      "incasso_eur": 355064.0,
+      "presenze": 45946,
+      "incasso_totale_eur": 591899.0,
+      "presenze_totale": 79272
+    },
+    {
+      "pos": 5,
+      "titolo": "IL GATTO COL CAPPELLO (THE CAT IN THE HAT)",
+      "prima_programmazione": "05/11/2026",
+      "nazione": "GBR",
+      "distribuzione": "WARNER BROS. ITALIA",
+      "incasso_eur": 311988.0,
+      "presenze": 41673,
+      "incasso_totale_eur": 575042.0,
+      "presenze_totale": 76487
+    },
+    {
+      "pos": 6,
+      "titolo": "UN TRANQUILLO FUNERALE DI FAMIGLIA",
+      "prima_programmazione": "29/10/2026",
+      "nazione": "ITA",
+      "distribuzione": "01 DISTRIBUTION",
+      "incasso_eur": 280890.0,
+      "presenze": 35928,
+      "incasso_totale_eur": 1368473.0,
+      "presenze_totale": 183975
+    },
+    {
+      "pos": 7,
+      "titolo": "HOPE",
+      "prima_programmazione": "05/11/2026",
+      "nazione": "KOR",
+      "distribuzione": "MUBI",
+      "incasso_eur": 127859.0,
+      "presenze": 14856,
+      "incasso_totale_eur": 300687.0,
+      "presenze_totale": 34014
+    },
+    {
+      "pos": 8,
+      "titolo": "SHAUN VITA DA PECORA - OPERAZIONE Z.U.C.C.A",
+      "prima_programmazione": "28/10/2026",
+      "nazione": "GBR",
+      "distribuzione": "LUCKY RED DISTRIBUZIONE",
+      "incasso_eur": 79009.0,
+      "presenze": 10326,
+      "incasso_totale_eur": 651907.0,
+      "presenze_totale": 88477
+    },
+    {
+      "pos": 9,
+      "titolo": "CLAYFACE",
+      "prima_programmazione": "22/10/2026",
+      "nazione": "GBR",
+      "distribuzione": "WARNER BROS. ITALIA",
+      "incasso_eur": 78727.0,
+      "presenze": 8917,
+      "incasso_totale_eur": 1697341.0,
+      "presenze_totale": 208716
+    },
+    {
+      "pos": 10,
+      "titolo": "GEORGE MICHAEL: THE FAITH TOUR",
+      "prima_programmazione": "06/11/2026",
+      "nazione": "GBR",
+      "distribuzione": "UNIVERSAL",
+      "incasso_eur": 64115.0,
+      "presenze": 5284,
+      "incasso_totale_eur": 125682.0,
+      "presenze_totale": 10292
+    }
+  ]
+}
