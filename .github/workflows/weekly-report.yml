@@ -1,3 +1,24 @@
+# ---------------------------------------------------------------------------
+# NOTA: questo workflow NON parte da solo con un orario programmato.
+#
+# Lo avvia un cronjob esterno su cron-job.org, ogni lunedi' alle 08:00
+# (fuso Europe/Rome, quindi segue da solo l'ora legale/solare).
+# Il cronjob chiama l'API di GitHub con una richiesta POST a:
+#   https://api.github.com/repos/gniola/Cinetel-Scraper/actions/workflows/weekly-report.yml/dispatches
+# con body {"ref":"main"} e un token GitHub (fine-grained, permesso
+# "Actions: Read and write" solo su questo repository).
+#
+# Perche' cosi': il cron integrato di GitHub (on: schedule) puo' ritardare
+# anche di molte ore, mentre l'avvio via API parte quasi subito.
+#
+# Se il report non arriva di lunedi' mattina, controlla in ordine:
+#   1. cron-job.org: il cronjob e' attivo e l'ultima esecuzione ha risposto 204?
+#   2. Il token GitHub e' scaduto o e' stato revocato? (risposta 401/403)
+#   3. Il nome del repository o del file nell'URL e' cambiato? (risposta 404)
+#
+# Per lanciarlo a mano: tab Actions -> "Cinetel weekly report" -> Run workflow.
+# ---------------------------------------------------------------------------
+
 name: Cinetel weekly report
 
 on:
