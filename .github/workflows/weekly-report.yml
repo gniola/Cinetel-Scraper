@@ -1,53 +1,63 @@
 name: Cinetel weekly report
 
 on:
-  # Parte quando il workflow "Cinetel daily scrape" finisce.
-  # Il controllo qui sotto lo lascia proseguire solo di lunedi' (ora di Roma)
-  # e solo se nel CSV ci sono gia' i dati della domenica.
-  workflow_run:
-    workflows: ["Cinetel daily scrape"]
-    types: [completed]
-  workflow_dispatch: {}  # lancio manuale: salta il controllo del giorno
+  # Lo lancia un cron esterno (cron-job.org) ogni lunedi' alle 8:00 di Roma
+  # tramite l'API di GitHub, perche' lo "schedule" di GitHub puo' ritardare di ore.
+  workflow_dispatch: {}
 
 permissions:
-  contents: read
+  contents: write
 
 jobs:
   weekly-report:
-    # Se arriva da workflow_run, procede solo se lo scrape e' andato a buon fine
-    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
 
-      - name: Controlla che il daily scrape della domenica sia gia' stato fatto
-        id: gate
-        run: |
-          RUN=true
-          if [ "${{ github.event_name }}" = "workflow_run" ]; then
-            DOW=$(TZ=Europe/Rome date +%u)          # 1 = lunedi'
-            SUNDAY=$(TZ=Europe/Rome date -d "yesterday" +%F)
-            if [ "$DOW" != "1" ]; then
-              echo "Oggi non e' lunedi' (giorno $DOW): salto."
-              RUN=false
-            elif ! grep -q "^${SUNDAY}," data/cinetel_boxoffice.csv; then
-              echo "Nel CSV mancano i dati di domenica $SUNDAY: salto."
-              RUN=false
-            else
-              echo "Trovati i dati di domenica $SUNDAY: procedo."
-            fi
-          fi
-          echo "run=$RUN" >> "$GITHUB_OUTPUT"
-
       - name: Set up Python
-        if: steps.gate.outputs.run == 'true'
         uses: actions/setup-python@v5
         with:
           python-version: "3.12"
 
+      - name: Install dependencies
+        run: |
+          pip install -r requirements.txt
+          playwright install --with-deps chromium
+
+      - name: Scarica i dati (riprova fino a trovare la domenica)
+        run: |
+          SUNDAY=$(TZ=Europe/Rome date -d "yesterday" +%F)
+          for i in 1 2 3 4 5 6 7; do
+            python scripts/scrape_cinetel.py || echo "Scrape fallito al tentativo $i"
+            if grep -q "^${SUNDAY}," data/cinetel_boxoffice.csv; then
+              echo "Trovati i dati di domenica $SUNDAY."
+              break
+            fi
+            if [ "$i" -lt 7 ]; then
+              echo "Dati di domenica $SUNDAY non ancora presenti: riprovo tra 5 minuti."
+              sleep 300
+            fi
+          done
+
+      - name: Schermi per film (ComingSoon)
+        continue-on-error: true
+        run: python scripts/scrape_schermi.py
+
+      - name: Salva i dati nel repository
+        run: |
+          git config user.name "cinetel-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/
+          if git diff --cached --quiet; then
+            echo "Nessun dato nuovo da salvare."
+          else
+            git commit -m "Aggiornamento dati Cinetel (report settimanale) $(date -u +%Y-%m-%d)"
+            git pull --rebase
+            git push
+          fi
+
       - name: Send weekly report email
-        if: steps.gate.outputs.run == 'true'
         env:
           GMAIL_ADDRESS: ${{ secrets.GMAIL_ADDRESS }}
           GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
