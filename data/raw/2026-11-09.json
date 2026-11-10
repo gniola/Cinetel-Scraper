@@ -1,0 +1,116 @@
+{
+  "data_riferimento": "2026-11-09",
+  "scraped_at_utc": "2026-11-10T13:41:24+00:00",
+  "film": [
+    {
+      "pos": 1,
+      "titolo": "SE DOMANI NON TORNO",
+      "prima_programmazione": "05/11/2026",
+      "nazione": "ITA",
+      "distribuzione": "NOTORIOUS PICTURES",
+      "incasso_eur": 197325.0,
+      "presenze": 29297,
+      "incasso_totale_eur": 2132076.0,
+      "presenze_totale": 320774
+    },
+    {
+      "pos": 2,
+      "titolo": "WILD HORSE NINE",
+      "prima_programmazione": "05/11/2026",
+      "nazione": "USA",
+      "distribuzione": "WALT DISNEY S.M.P. ITALIA",
+      "incasso_eur": 83407.0,
+      "presenze": 12408,
+      "incasso_totale_eur": 1007187.0,
+      "presenze_totale": 135646
+    },
+    {
+      "pos": 3,
+      "titolo": "DIO RIDE",
+      "prima_programmazione": "29/10/2026",
+      "nazione": "ITA",
+      "distribuzione": "PIPER FILM",
+      "incasso_eur": 76434.0,
+      "presenze": 12151,
+      "incasso_totale_eur": 2856952.0,
+      "presenze_totale": 406353
+    },
+    {
+      "pos": 4,
+      "titolo": "HOPE",
+      "prima_programmazione": "05/11/2026",
+      "nazione": "KOR",
+      "distribuzione": "MUBI",
+      "incasso_eur": 31809.0,
+      "presenze": 4198,
+      "incasso_totale_eur": 428863.0,
+      "presenze_totale": 49711
+    },
+    {
+      "pos": 5,
+      "titolo": "UN TRANQUILLO FUNERALE DI FAMIGLIA",
+      "prima_programmazione": "29/10/2026",
+      "nazione": "ITA",
+      "distribuzione": "01 DISTRIBUTION",
+      "incasso_eur": 30473.0,
+      "presenze": 4399,
+      "incasso_totale_eur": 1663104.0,
+      "presenze_totale": 222928
+    },
+    {
+      "pos": 6,
+      "titolo": "GEORGE MICHAEL: THE FAITH TOUR",
+      "prima_programmazione": "06/11/2026",
+      "nazione": "GBR",
+      "distribuzione": "UNIVERSAL",
+      "incasso_eur": 27829.0,
+      "presenze": 2445,
+      "incasso_totale_eur": 214326.0,
+      "presenze_totale": 17803
+    },
+    {
+      "pos": 7,
+      "titolo": "IL GATTO COL CAPPELLO (THE CAT IN THE HAT)",
+      "prima_programmazione": "05/11/2026",
+      "nazione": "GBR",
+      "distribuzione": "WARNER BROS. ITALIA",
+      "incasso_eur": 27020.0,
+      "presenze": 3991,
+      "incasso_totale_eur": 994392.0,
+      "presenze_totale": 132531
+    },
+    {
+      "pos": 8,
+      "titolo": "CLAYFACE",
+      "prima_programmazione": "22/10/2026",
+      "nazione": "GBR",
+      "distribuzione": "WARNER BROS. ITALIA",
+      "incasso_eur": 13590.0,
+      "presenze": 1742,
+      "incasso_totale_eur": 1759669.0,
+      "presenze_totale": 215920
+    },
+    {
+      "pos": 9,
+      "titolo": "L'ESTRANEA",
+      "prima_programmazione": "08/10/2026",
+      "nazione": "COP",
+      "distribuzione": "01 DISTRIBUTION",
+      "incasso_eur": 12254.0,
+      "presenze": 2073,
+      "incasso_totale_eur": 3476182.0,
+      "presenze_totale": 477608
+    },
+    {
+      "pos": 10,
+      "titolo": "WILDWOOD – I SEGRETI DEL BOSCO PROIBITO",
+      "prima_programmazione": "22/10/2026",
+      "nazione": "USA",
+      "distribuzione": "NOTORIOUS PICTURES",
+      "incasso_eur": 12059.0,
+      "presenze": 1717,
+      "incasso_totale_eur": 984371.0,
+      "presenze_totale": 131397
+    }
+  ]
+}
