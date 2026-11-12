@@ -1,0 +1,116 @@
+{
+  "data_riferimento": "2026-11-11",
+  "scraped_at_utc": "2026-11-12T13:55:58+00:00",
+  "film": [
+    {
+      "pos": 1,
+      "titolo": "SE DOMANI NON TORNO",
+      "prima_programmazione": "05/11/2026",
+      "nazione": "ITA",
+      "distribuzione": "NOTORIOUS PICTURES",
+      "incasso_eur": 290549.0,
+      "presenze": 44879,
+      "incasso_totale_eur": 2687189.0,
+      "presenze_totale": 405570
+    },
+    {
+      "pos": 2,
+      "titolo": "DIO RIDE",
+      "prima_programmazione": "29/10/2026",
+      "nazione": "ITA",
+      "distribuzione": "PIPER FILM",
+      "incasso_eur": 120849.0,
+      "presenze": 19531,
+      "incasso_totale_eur": 3087812.0,
+      "presenze_totale": 443361
+    },
+    {
+      "pos": 3,
+      "titolo": "WILD HORSE NINE",
+      "prima_programmazione": "05/11/2026",
+      "nazione": "USA",
+      "distribuzione": "WALT DISNEY S.M.P. ITALIA",
+      "incasso_eur": 117457.0,
+      "presenze": 18229,
+      "incasso_totale_eur": 1231115.0,
+      "presenze_totale": 169660
+    },
+    {
+      "pos": 4,
+      "titolo": "UN TRANQUILLO FUNERALE DI FAMIGLIA",
+      "prima_programmazione": "29/10/2026",
+      "nazione": "ITA",
+      "distribuzione": "01 DISTRIBUTION",
+      "incasso_eur": 48142.0,
+      "presenze": 7656,
+      "incasso_totale_eur": 1752146.0,
+      "presenze_totale": 236759
+    },
+    {
+      "pos": 5,
+      "titolo": "IL GATTO COL CAPPELLO (THE CAT IN THE HAT)",
+      "prima_programmazione": "05/11/2026",
+      "nazione": "GBR",
+      "distribuzione": "WARNER BROS. ITALIA",
+      "incasso_eur": 41572.0,
+      "presenze": 6517,
+      "incasso_totale_eur": 1070918.0,
+      "presenze_totale": 144387
+    },
+    {
+      "pos": 6,
+      "titolo": "HOPE",
+      "prima_programmazione": "05/11/2026",
+      "nazione": "KOR",
+      "distribuzione": "MUBI",
+      "incasso_eur": 38538.0,
+      "presenze": 5345,
+      "incasso_totale_eur": 505176.0,
+      "presenze_totale": 60151
+    },
+    {
+      "pos": 7,
+      "titolo": "GEORGE MICHAEL: THE FAITH TOUR",
+      "prima_programmazione": "06/11/2026",
+      "nazione": "GBR",
+      "distribuzione": "UNIVERSAL",
+      "incasso_eur": 36244.0,
+      "presenze": 3461,
+      "incasso_totale_eur": 283861.0,
+      "presenze_totale": 24289
+    },
+    {
+      "pos": 8,
+      "titolo": "CLAYFACE",
+      "prima_programmazione": "22/10/2026",
+      "nazione": "GBR",
+      "distribuzione": "WARNER BROS. ITALIA",
+      "incasso_eur": 18756.0,
+      "presenze": 2520,
+      "incasso_totale_eur": 1794955.0,
+      "presenze_totale": 220637
+    },
+    {
+      "pos": 9,
+      "titolo": "WILDWOOD – I SEGRETI DEL BOSCO PROIBITO",
+      "prima_programmazione": "22/10/2026",
+      "nazione": "USA",
+      "distribuzione": "NOTORIOUS PICTURES",
+      "incasso_eur": 17025.0,
+      "presenze": 2413,
+      "incasso_totale_eur": 1016301.0,
+      "presenze_totale": 135874
+    },
+    {
+      "pos": 10,
+      "titolo": "RAGIONE E SENTIMENTO (SENSE AND SENSIBILITY)",
+      "prima_programmazione": "22/10/2026",
+      "nazione": "GBR",
+      "distribuzione": "UNIVERSAL",
+      "incasso_eur": 16004.0,
+      "presenze": 2422,
+      "incasso_totale_eur": 1691211.0,
+      "presenze_totale": 224829
+    }
+  ]
+}
