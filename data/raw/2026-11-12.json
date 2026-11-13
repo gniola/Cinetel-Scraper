@@ -1,0 +1,116 @@
+{
+  "data_riferimento": "2026-11-12",
+  "scraped_at_utc": "2026-11-13T13:20:55+00:00",
+  "film": [
+    {
+      "pos": 1,
+      "titolo": "SCROOGE E GLI SPIRITI DEL NATALE (EBENEZER)",
+      "prima_programmazione": "12/11/2026",
+      "nazione": "USA",
+      "distribuzione": "EAGLE PICTURES",
+      "incasso_eur": 178855.0,
+      "presenze": 23387,
+      "incasso_totale_eur": 178855.0,
+      "presenze_totale": 23387
+    },
+    {
+      "pos": 2,
+      "titolo": "SE DOMANI NON TORNO",
+      "prima_programmazione": "05/11/2026",
+      "nazione": "ITA",
+      "distribuzione": "NOTORIOUS PICTURES",
+      "incasso_eur": 175442.0,
+      "presenze": 26846,
+      "incasso_totale_eur": 2863284.0,
+      "presenze_totale": 432520
+    },
+    {
+      "pos": 3,
+      "titolo": "GODZILLA MINUS ZERO",
+      "prima_programmazione": "12/11/2026",
+      "nazione": "JPN",
+      "distribuzione": "PLAION PICTURES",
+      "incasso_eur": 106977.0,
+      "presenze": 12643,
+      "incasso_totale_eur": 107391.0,
+      "presenze_totale": 12705
+    },
+    {
+      "pos": 4,
+      "titolo": "IL RUMORE DELLE COSE NUOVE",
+      "prima_programmazione": "12/11/2026",
+      "nazione": "ITA",
+      "distribuzione": "01 DISTRIBUTION",
+      "incasso_eur": 67206.0,
+      "presenze": 9377,
+      "incasso_totale_eur": 92805.0,
+      "presenze_totale": 12024
+    },
+    {
+      "pos": 5,
+      "titolo": "UN WEEKEND ARTIFICIALE",
+      "prima_programmazione": "12/11/2026",
+      "nazione": "ITA",
+      "distribuzione": "VISION DISTRIBUTION",
+      "incasso_eur": 61985.0,
+      "presenze": 8181,
+      "incasso_totale_eur": 75083.0,
+      "presenze_totale": 9751
+    },
+    {
+      "pos": 6,
+      "titolo": "WILD HORSE NINE",
+      "prima_programmazione": "05/11/2026",
+      "nazione": "USA",
+      "distribuzione": "WALT DISNEY S.M.P. ITALIA",
+      "incasso_eur": 54137.0,
+      "presenze": 7546,
+      "incasso_totale_eur": 1285736.0,
+      "presenze_totale": 177269
+    },
+    {
+      "pos": 7,
+      "titolo": "DIO RIDE",
+      "prima_programmazione": "29/10/2026",
+      "nazione": "ITA",
+      "distribuzione": "PIPER FILM",
+      "incasso_eur": 45329.0,
+      "presenze": 6643,
+      "incasso_totale_eur": 3134203.0,
+      "presenze_totale": 450147
+    },
+    {
+      "pos": 8,
+      "titolo": "LOOK BACK",
+      "prima_programmazione": "12/11/2026",
+      "nazione": "JPN",
+      "distribuzione": "LUCKY RED DISTRIBUZIONE",
+      "incasso_eur": 27743.0,
+      "presenze": 4037,
+      "incasso_totale_eur": 40824.0,
+      "presenze_totale": 5926
+    },
+    {
+      "pos": 9,
+      "titolo": "HOPE",
+      "prima_programmazione": "05/11/2026",
+      "nazione": "KOR",
+      "distribuzione": "MUBI",
+      "incasso_eur": 19849.0,
+      "presenze": 2454,
+      "incasso_totale_eur": 525206.0,
+      "presenze_totale": 62634
+    },
+    {
+      "pos": 10,
+      "titolo": "COME RAPINARE UNA BANCA (HOW TO ROB A BANK)",
+      "prima_programmazione": "12/11/2026",
+      "nazione": "USA",
+      "distribuzione": "EAGLE PICTURES",
+      "incasso_eur": 19290.0,
+      "presenze": 2426,
+      "incasso_totale_eur": 19290.0,
+      "presenze_totale": 2426
+    }
+  ]
+}
