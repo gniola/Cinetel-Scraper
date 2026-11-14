@@ -1,0 +1,116 @@
+{
+  "data_riferimento": "2026-11-13",
+  "scraped_at_utc": "2026-11-14T12:25:05+00:00",
+  "film": [
+    {
+      "pos": 1,
+      "titolo": "SCROOGE E GLI SPIRITI DEL NATALE (EBENEZER)",
+      "prima_programmazione": "12/11/2026",
+      "nazione": "USA",
+      "distribuzione": "EAGLE PICTURES",
+      "incasso_eur": 324855.0,
+      "presenze": 40909,
+      "incasso_totale_eur": 503737.0,
+      "presenze_totale": 64299
+    },
+    {
+      "pos": 2,
+      "titolo": "SE DOMANI NON TORNO",
+      "prima_programmazione": "05/11/2026",
+      "nazione": "ITA",
+      "distribuzione": "NOTORIOUS PICTURES",
+      "incasso_eur": 272111.0,
+      "presenze": 37878,
+      "incasso_totale_eur": 3136315.0,
+      "presenze_totale": 470528
+    },
+    {
+      "pos": 3,
+      "titolo": "IL RUMORE DELLE COSE NUOVE",
+      "prima_programmazione": "12/11/2026",
+      "nazione": "ITA",
+      "distribuzione": "01 DISTRIBUTION",
+      "incasso_eur": 143547.0,
+      "presenze": 19288,
+      "incasso_totale_eur": 236352.0,
+      "presenze_totale": 31312
+    },
+    {
+      "pos": 4,
+      "titolo": "UN WEEKEND ARTIFICIALE",
+      "prima_programmazione": "12/11/2026",
+      "nazione": "ITA",
+      "distribuzione": "VISION DISTRIBUTION",
+      "incasso_eur": 132225.0,
+      "presenze": 16183,
+      "incasso_totale_eur": 207324.0,
+      "presenze_totale": 25936
+    },
+    {
+      "pos": 5,
+      "titolo": "GODZILLA MINUS ZERO",
+      "prima_programmazione": "12/11/2026",
+      "nazione": "JPN",
+      "distribuzione": "PLAION PICTURES",
+      "incasso_eur": 121963.0,
+      "presenze": 14300,
+      "incasso_totale_eur": 229456.0,
+      "presenze_totale": 27017
+    },
+    {
+      "pos": 6,
+      "titolo": "WILD HORSE NINE",
+      "prima_programmazione": "05/11/2026",
+      "nazione": "USA",
+      "distribuzione": "WALT DISNEY S.M.P. ITALIA",
+      "incasso_eur": 113031.0,
+      "presenze": 15285,
+      "incasso_totale_eur": 1398775.0,
+      "presenze_totale": 192555
+    },
+    {
+      "pos": 7,
+      "titolo": "DIO RIDE",
+      "prima_programmazione": "29/10/2026",
+      "nazione": "ITA",
+      "distribuzione": "PIPER FILM",
+      "incasso_eur": 96984.0,
+      "presenze": 13554,
+      "incasso_totale_eur": 3231278.0,
+      "presenze_totale": 463714
+    },
+    {
+      "pos": 8,
+      "titolo": "IL GATTO COL CAPPELLO (THE CAT IN THE HAT)",
+      "prima_programmazione": "05/11/2026",
+      "nazione": "GBR",
+      "distribuzione": "WARNER BROS. ITALIA",
+      "incasso_eur": 43631.0,
+      "presenze": 6115,
+      "incasso_totale_eur": 1133160.0,
+      "presenze_totale": 153248
+    },
+    {
+      "pos": 9,
+      "titolo": "COME RAPINARE UNA BANCA (HOW TO ROB A BANK)",
+      "prima_programmazione": "12/11/2026",
+      "nazione": "USA",
+      "distribuzione": "EAGLE PICTURES",
+      "incasso_eur": 35018.0,
+      "presenze": 4280,
+      "incasso_totale_eur": 54308.0,
+      "presenze_totale": 6706
+    },
+    {
+      "pos": 10,
+      "titolo": "UN TRANQUILLO FUNERALE DI FAMIGLIA",
+      "prima_programmazione": "29/10/2026",
+      "nazione": "ITA",
+      "distribuzione": "01 DISTRIBUTION",
+      "incasso_eur": 31446.0,
+      "presenze": 4171,
+      "incasso_totale_eur": 1796590.0,
+      "presenze_totale": 242744
+    }
+  ]
+}
