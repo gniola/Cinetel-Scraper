@@ -30,6 +30,7 @@ import csv
 import json
 import re
 import sys
+import time
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -157,18 +158,37 @@ def extract_reference_date(page_text: str):
     return f"{yyyy}-{mm}-{dd}"
 
 
-def fetch_page_text() -> str:
-    with sync_playwright() as p:
-        browser = p.chromium.launch()
-        page = browser.new_page()
-        page.goto(URL, wait_until="networkidle", timeout=60000)
-        # I dati sono caricati via JS dopo il load iniziale: aspettiamo che
-        # compaia la prima riga della tabella prima di leggere il testo.
-        page.wait_for_selector("text=Box Office al", timeout=30000)
-        page.wait_for_timeout(2000)  # margine per il rendering completo delle righe
-        text = page.inner_text("body")
-        browser.close()
-        return text
+def fetch_page_text(tentativi: int = 3) -> str:
+    """
+    Apre la pagina e ritorna il testo visibile.
+
+    NOTA: non uso wait_until="networkidle". Cinetel e' una pagina "in tempo
+    reale" che continua a fare richieste in background, quindi la rete non
+    diventa mai "idle" e il caricamento andava in timeout (visto su una run
+    reale: Page.goto Timeout 60000ms). Basta aspettare il caricamento base
+    (domcontentloaded) e poi che compaia la scritta "Box Office al", segno
+    che la tabella e' stata disegnata. Se un tentativo fallisce (sito lento
+    o irraggiungibile per un momento) riprovo, fino a `tentativi` volte.
+    """
+    ultimo_errore = None
+    for n in range(1, tentativi + 1):
+        try:
+            with sync_playwright() as p:
+                browser = p.chromium.launch()
+                try:
+                    page = browser.new_page()
+                    page.goto(URL, wait_until="domcontentloaded", timeout=60000)
+                    page.wait_for_selector("text=Box Office al", timeout=60000)
+                    page.wait_for_timeout(3000)  # margine per il rendering completo delle righe
+                    return page.inner_text("body")
+                finally:
+                    browser.close()
+        except Exception as e:  # timeout, errori di rete, ecc.
+            ultimo_errore = e
+            print(f"Tentativo {n}/{tentativi} fallito: {e}", file=sys.stderr)
+            if n < tentativi:
+                time.sleep(20)
+    raise ultimo_errore
 
 
 def append_csv(rows, reference_date, scraped_at):
