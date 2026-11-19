@@ -1,0 +1,116 @@
+{
+  "data_riferimento": "2026-11-18",
+  "scraped_at_utc": "2026-11-19T14:37:56+00:00",
+  "film": [
+    {
+      "pos": 1,
+      "titolo": "SE DOMANI NON TORNO",
+      "prima_programmazione": "05/11/2026",
+      "nazione": "ITA",
+      "distribuzione": "NOTORIOUS PICTURES",
+      "incasso_eur": 245850.0,
+      "presenze": 39425,
+      "incasso_totale_eur": 4744183.0,
+      "presenze_totale": 695198
+    },
+    {
+      "pos": 2,
+      "titolo": "SCROOGE E GLI SPIRITI DEL NATALE (EBENEZER)",
+      "prima_programmazione": "12/11/2026",
+      "nazione": "USA",
+      "distribuzione": "EAGLE PICTURES",
+      "incasso_eur": 224840.0,
+      "presenze": 32579,
+      "incasso_totale_eur": 2556992.0,
+      "presenze_totale": 328281
+    },
+    {
+      "pos": 3,
+      "titolo": "LA STORIA INFINITA (DIE UNENDLICHE GESCHICHTE)(RIED.)",
+      "prima_programmazione": "16/11/2026",
+      "nazione": "DEU",
+      "distribuzione": "ADLER ENTERTAINMENT",
+      "incasso_eur": 122761.0,
+      "presenze": 14628,
+      "incasso_totale_eur": 309308.0,
+      "presenze_totale": 36160
+    },
+    {
+      "pos": 4,
+      "titolo": "2001: ODISSEA NELLO SPAZIO 4K",
+      "prima_programmazione": "16/11/2026",
+      "nazione": "USA",
+      "distribuzione": "NEXO DIGITAL S.R.L.",
+      "incasso_eur": 119428.0,
+      "presenze": 13195,
+      "incasso_totale_eur": 339326.0,
+      "presenze_totale": 37712
+    },
+    {
+      "pos": 5,
+      "titolo": "IL RUMORE DELLE COSE NUOVE",
+      "prima_programmazione": "12/11/2026",
+      "nazione": "ITA",
+      "distribuzione": "01 DISTRIBUTION",
+      "incasso_eur": 89466.0,
+      "presenze": 14168,
+      "incasso_totale_eur": 1257460.0,
+      "presenze_totale": 168895
+    },
+    {
+      "pos": 6,
+      "titolo": "UN WEEKEND ARTIFICIALE",
+      "prima_programmazione": "12/11/2026",
+      "nazione": "ITA",
+      "distribuzione": "VISION DISTRIBUTION",
+      "incasso_eur": 76031.0,
+      "presenze": 11279,
+      "incasso_totale_eur": 1257638.0,
+      "presenze_totale": 159656
+    },
+    {
+      "pos": 7,
+      "titolo": "DIO RIDE",
+      "prima_programmazione": "29/10/2026",
+      "nazione": "ITA",
+      "distribuzione": "PIPER FILM",
+      "incasso_eur": 70205.0,
+      "presenze": 11442,
+      "incasso_totale_eur": 4061575.0,
+      "presenze_totale": 580227
+    },
+    {
+      "pos": 8,
+      "titolo": "WILD HORSE NINE",
+      "prima_programmazione": "05/11/2026",
+      "nazione": "USA",
+      "distribuzione": "WALT DISNEY S.M.P. ITALIA",
+      "incasso_eur": 69974.0,
+      "presenze": 10789,
+      "incasso_totale_eur": 2143185.0,
+      "presenze_totale": 292196
+    },
+    {
+      "pos": 9,
+      "titolo": "GODZILLA MINUS ZERO",
+      "prima_programmazione": "12/11/2026",
+      "nazione": "JPN",
+      "distribuzione": "PLAION PICTURES",
+      "incasso_eur": 47547.0,
+      "presenze": 6171,
+      "incasso_totale_eur": 790366.0,
+      "presenze_totale": 92266
+    },
+    {
+      "pos": 10,
+      "titolo": "LOOK BACK",
+      "prima_programmazione": "12/11/2026",
+      "nazione": "JPN",
+      "distribuzione": "LUCKY RED DISTRIBUZIONE",
+      "incasso_eur": 26673.0,
+      "presenze": 4312,
+      "incasso_totale_eur": 297470.0,
+      "presenze_totale": 41847
+    }
+  ]
+}
