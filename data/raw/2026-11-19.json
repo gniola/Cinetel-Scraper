@@ -1,0 +1,116 @@
+{
+  "data_riferimento": "2026-11-19",
+  "scraped_at_utc": "2026-11-20T14:15:55+00:00",
+  "film": [
+    {
+      "pos": 1,
+      "titolo": "HUNGER GAMES L'ALBA SULLA MIETITURA",
+      "prima_programmazione": "19/11/2026",
+      "nazione": "USA",
+      "distribuzione": "NOTORIOUS PICTURES",
+      "incasso_eur": 608836.0,
+      "presenze": 74526,
+      "incasso_totale_eur": 608836.0,
+      "presenze_totale": 74526
+    },
+    {
+      "pos": 2,
+      "titolo": "SE DOMANI NON TORNO",
+      "prima_programmazione": "05/11/2026",
+      "nazione": "ITA",
+      "distribuzione": "NOTORIOUS PICTURES",
+      "incasso_eur": 146685.0,
+      "presenze": 23215,
+      "incasso_totale_eur": 4893603.0,
+      "presenze_totale": 718924
+    },
+    {
+      "pos": 3,
+      "titolo": "SCROOGE E GLI SPIRITI DEL NATALE (EBENEZER)",
+      "prima_programmazione": "12/11/2026",
+      "nazione": "USA",
+      "distribuzione": "EAGLE PICTURES",
+      "incasso_eur": 145327.0,
+      "presenze": 19345,
+      "incasso_totale_eur": 2704033.0,
+      "presenze_totale": 347925
+    },
+    {
+      "pos": 4,
+      "titolo": "IL RUMORE DELLE COSE NUOVE",
+      "prima_programmazione": "12/11/2026",
+      "nazione": "ITA",
+      "distribuzione": "01 DISTRIBUTION",
+      "incasso_eur": 44862.0,
+      "presenze": 6475,
+      "incasso_totale_eur": 1303164.0,
+      "presenze_totale": 175503
+    },
+    {
+      "pos": 5,
+      "titolo": "UN WEEKEND ARTIFICIALE",
+      "prima_programmazione": "12/11/2026",
+      "nazione": "ITA",
+      "distribuzione": "VISION DISTRIBUTION",
+      "incasso_eur": 35903.0,
+      "presenze": 4793,
+      "incasso_totale_eur": 1294001.0,
+      "presenze_totale": 164517
+    },
+    {
+      "pos": 6,
+      "titolo": "WILD HORSE NINE",
+      "prima_programmazione": "05/11/2026",
+      "nazione": "USA",
+      "distribuzione": "WALT DISNEY S.M.P. ITALIA",
+      "incasso_eur": 35410.0,
+      "presenze": 4890,
+      "incasso_totale_eur": 2179451.0,
+      "presenze_totale": 297234
+    },
+    {
+      "pos": 7,
+      "titolo": "DIO RIDE",
+      "prima_programmazione": "29/10/2026",
+      "nazione": "ITA",
+      "distribuzione": "PIPER FILM",
+      "incasso_eur": 25452.0,
+      "presenze": 3766,
+      "incasso_totale_eur": 4089189.0,
+      "presenze_totale": 584393
+    },
+    {
+      "pos": 8,
+      "titolo": "IL FUOCO CHE TI PORTI DENTRO",
+      "prima_programmazione": "19/11/2026",
+      "nazione": "ITA",
+      "distribuzione": "01 DISTRIBUTION",
+      "incasso_eur": 25208.0,
+      "presenze": 3728,
+      "incasso_totale_eur": 25208.0,
+      "presenze_totale": 3728
+    },
+    {
+      "pos": 9,
+      "titolo": "FJORD",
+      "prima_programmazione": "19/11/2026",
+      "nazione": "DNK",
+      "distribuzione": "BIM DISTRIBUZIONE",
+      "incasso_eur": 24751.0,
+      "presenze": 3929,
+      "incasso_totale_eur": 46262.0,
+      "presenze_totale": 7134
+    },
+    {
+      "pos": 10,
+      "titolo": "GODZILLA MINUS ZERO",
+      "prima_programmazione": "12/11/2026",
+      "nazione": "JPN",
+      "distribuzione": "PLAION PICTURES",
+      "incasso_eur": 15330.0,
+      "presenze": 2010,
+      "incasso_totale_eur": 805842.0,
+      "presenze_totale": 94304
+    }
+  ]
+}
