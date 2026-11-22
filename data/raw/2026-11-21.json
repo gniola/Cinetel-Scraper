@@ -1,0 +1,116 @@
+{
+  "data_riferimento": "2026-11-21",
+  "scraped_at_utc": "2026-11-22T13:32:13+00:00",
+  "film": [
+    {
+      "pos": 1,
+      "titolo": "HUNGER GAMES L'ALBA SULLA MIETITURA",
+      "prima_programmazione": "19/11/2026",
+      "nazione": "USA",
+      "distribuzione": "NOTORIOUS PICTURES",
+      "incasso_eur": 1025118.0,
+      "presenze": 115960,
+      "incasso_totale_eur": 2350574.0,
+      "presenze_totale": 273855
+    },
+    {
+      "pos": 2,
+      "titolo": "SCROOGE E GLI SPIRITI DEL NATALE (EBENEZER)",
+      "prima_programmazione": "12/11/2026",
+      "nazione": "USA",
+      "distribuzione": "EAGLE PICTURES",
+      "incasso_eur": 568551.0,
+      "presenze": 71067,
+      "incasso_totale_eur": 3572247.0,
+      "presenze_totale": 457512
+    },
+    {
+      "pos": 3,
+      "titolo": "SE DOMANI NON TORNO",
+      "prima_programmazione": "05/11/2026",
+      "nazione": "ITA",
+      "distribuzione": "NOTORIOUS PICTURES",
+      "incasso_eur": 251990.0,
+      "presenze": 32848,
+      "incasso_totale_eur": 5329261.0,
+      "presenze_totale": 776972
+    },
+    {
+      "pos": 4,
+      "titolo": "IL RUMORE DELLE COSE NUOVE",
+      "prima_programmazione": "12/11/2026",
+      "nazione": "ITA",
+      "distribuzione": "01 DISTRIBUTION",
+      "incasso_eur": 223512.0,
+      "presenze": 29163,
+      "incasso_totale_eur": 1626223.0,
+      "presenze_totale": 218200
+    },
+    {
+      "pos": 5,
+      "titolo": "UN WEEKEND ARTIFICIALE",
+      "prima_programmazione": "12/11/2026",
+      "nazione": "ITA",
+      "distribuzione": "VISION DISTRIBUTION",
+      "incasso_eur": 205421.0,
+      "presenze": 25340,
+      "incasso_totale_eur": 1578111.0,
+      "presenze_totale": 199837
+    },
+    {
+      "pos": 6,
+      "titolo": "WILD HORSE NINE",
+      "prima_programmazione": "05/11/2026",
+      "nazione": "USA",
+      "distribuzione": "WALT DISNEY S.M.P. ITALIA",
+      "incasso_eur": 147551.0,
+      "presenze": 18554,
+      "incasso_totale_eur": 2390736.0,
+      "presenze_totale": 324306
+    },
+    {
+      "pos": 7,
+      "titolo": "DIO RIDE",
+      "prima_programmazione": "29/10/2026",
+      "nazione": "ITA",
+      "distribuzione": "PIPER FILM",
+      "incasso_eur": 132204.0,
+      "presenze": 17697,
+      "incasso_totale_eur": 4273291.0,
+      "presenze_totale": 609525
+    },
+    {
+      "pos": 8,
+      "titolo": "BTS WORLD TOUR 'ARIRANG' IN KAOHSIUNG: LIVE VIEWING",
+      "prima_programmazione": "21/11/2026",
+      "nazione": "KOR",
+      "distribuzione": "NEXO DIGITAL S.R.L.",
+      "incasso_eur": 131665.0,
+      "presenze": 5725,
+      "incasso_totale_eur": 131665.0,
+      "presenze_totale": 5725
+    },
+    {
+      "pos": 9,
+      "titolo": "IL GATTO COL CAPPELLO (THE CAT IN THE HAT)",
+      "prima_programmazione": "05/11/2026",
+      "nazione": "GBR",
+      "distribuzione": "WARNER BROS. ITALIA",
+      "incasso_eur": 127649.0,
+      "presenze": 17295,
+      "incasso_totale_eur": 1898276.0,
+      "presenze_totale": 256629
+    },
+    {
+      "pos": 10,
+      "titolo": "FJORD",
+      "prima_programmazione": "19/11/2026",
+      "nazione": "DNK",
+      "distribuzione": "BIM DISTRIBUZIONE",
+      "incasso_eur": 118183.0,
+      "presenze": 16372,
+      "incasso_totale_eur": 210945.0,
+      "presenze_totale": 30516
+    }
+  ]
+}
