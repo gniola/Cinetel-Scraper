@@ -1,0 +1,116 @@
+{
+  "data_riferimento": "2026-11-25",
+  "scraped_at_utc": "2026-11-26T15:36:38+00:00",
+  "film": [
+    {
+      "pos": 1,
+      "titolo": "SE DOMANI NON TORNO",
+      "prima_programmazione": "05/11/2026",
+      "nazione": "ITA",
+      "distribuzione": "NOTORIOUS PICTURES",
+      "incasso_eur": 475258.0,
+      "presenze": 90155,
+      "incasso_totale_eur": 6583117.0,
+      "presenze_totale": 989331
+    },
+    {
+      "pos": 2,
+      "titolo": "HUNGER GAMES L'ALBA SULLA MIETITURA",
+      "prima_programmazione": "19/11/2026",
+      "nazione": "USA",
+      "distribuzione": "NOTORIOUS PICTURES",
+      "incasso_eur": 283445.0,
+      "presenze": 38588,
+      "incasso_totale_eur": 4259677.0,
+      "presenze_totale": 505324
+    },
+    {
+      "pos": 3,
+      "titolo": "SCROOGE E GLI SPIRITI DEL NATALE (EBENEZER)",
+      "prima_programmazione": "12/11/2026",
+      "nazione": "USA",
+      "distribuzione": "EAGLE PICTURES",
+      "incasso_eur": 134187.0,
+      "presenze": 19763,
+      "incasso_totale_eur": 4632736.0,
+      "presenze_totale": 598080
+    },
+    {
+      "pos": 4,
+      "titolo": "MUSTANG",
+      "prima_programmazione": "23/11/2026",
+      "nazione": "ITA",
+      "distribuzione": "FANDANGO",
+      "incasso_eur": 124062.0,
+      "presenze": 16604,
+      "incasso_totale_eur": 388934.0,
+      "presenze_totale": 51598
+    },
+    {
+      "pos": 5,
+      "titolo": "YOUR NAME (10TH ANNIVERSARY) 4K",
+      "prima_programmazione": "23/11/2026",
+      "nazione": "JPN",
+      "distribuzione": "DYNIT",
+      "incasso_eur": 87594.0,
+      "presenze": 9067,
+      "incasso_totale_eur": 242054.0,
+      "presenze_totale": 25042
+    },
+    {
+      "pos": 6,
+      "titolo": "TI PRESENTO I FOTTER (FOCKER-IN-LAW)",
+      "prima_programmazione": "01/08/2027",
+      "nazione": "USA",
+      "distribuzione": "EAGLE PICTURES",
+      "incasso_eur": 83980.0,
+      "presenze": 11088,
+      "incasso_totale_eur": 240252.0,
+      "presenze_totale": 30116
+    },
+    {
+      "pos": 7,
+      "titolo": "IL RUMORE DELLE COSE NUOVE",
+      "prima_programmazione": "12/11/2026",
+      "nazione": "ITA",
+      "distribuzione": "01 DISTRIBUTION",
+      "incasso_eur": 40485.0,
+      "presenze": 6603,
+      "incasso_totale_eur": 2012113.0,
+      "presenze_totale": 272246
+    },
+    {
+      "pos": 8,
+      "titolo": "FJORD",
+      "prima_programmazione": "19/11/2026",
+      "nazione": "DNK",
+      "distribuzione": "BIM DISTRIBUZIONE",
+      "incasso_eur": 30910.0,
+      "presenze": 5127,
+      "incasso_totale_eur": 454041.0,
+      "presenze_totale": 66518
+    },
+    {
+      "pos": 9,
+      "titolo": "WILD HORSE NINE",
+      "prima_programmazione": "05/11/2026",
+      "nazione": "USA",
+      "distribuzione": "WALT DISNEY S.M.P. ITALIA",
+      "incasso_eur": 30820.0,
+      "presenze": 4776,
+      "incasso_totale_eur": 2654654.0,
+      "presenze_totale": 360241
+    },
+    {
+      "pos": 10,
+      "titolo": "UN WEEKEND ARTIFICIALE",
+      "prima_programmazione": "12/11/2026",
+      "nazione": "ITA",
+      "distribuzione": "VISION DISTRIBUTION",
+      "incasso_eur": 28601.0,
+      "presenze": 4179,
+      "incasso_totale_eur": 1936480.0,
+      "presenze_totale": 245903
+    }
+  ]
+}
