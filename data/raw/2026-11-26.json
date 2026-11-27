@@ -1,0 +1,116 @@
+{
+  "data_riferimento": "2026-11-26",
+  "scraped_at_utc": "2026-11-27T15:27:27+00:00",
+  "film": [
+    {
+      "pos": 1,
+      "titolo": "HUNGER GAMES L'ALBA SULLA MIETITURA",
+      "prima_programmazione": "19/11/2026",
+      "nazione": "USA",
+      "distribuzione": "NOTORIOUS PICTURES",
+      "incasso_eur": 186565.0,
+      "presenze": 23035,
+      "incasso_totale_eur": 4446253.0,
+      "presenze_totale": 528361
+    },
+    {
+      "pos": 2,
+      "titolo": "SE DOMANI NON TORNO",
+      "prima_programmazione": "05/11/2026",
+      "nazione": "ITA",
+      "distribuzione": "NOTORIOUS PICTURES",
+      "incasso_eur": 184537.0,
+      "presenze": 34441,
+      "incasso_totale_eur": 6772984.0,
+      "presenze_totale": 1024752
+    },
+    {
+      "pos": 3,
+      "titolo": "LA NOTTE DELLE FRAGOLE",
+      "prima_programmazione": "26/11/2026",
+      "nazione": "ITA",
+      "distribuzione": "MEDUSA FILM",
+      "incasso_eur": 115570.0,
+      "presenze": 16064,
+      "incasso_totale_eur": 115570.0,
+      "presenze_totale": 16064
+    },
+    {
+      "pos": 4,
+      "titolo": "TI PRESENTO I FOTTER (FOCKER-IN-LAW)",
+      "prima_programmazione": "26/11/2026",
+      "nazione": "USA",
+      "distribuzione": "EAGLE PICTURES",
+      "incasso_eur": 82957.0,
+      "presenze": 10986,
+      "incasso_totale_eur": 323219.0,
+      "presenze_totale": 41104
+    },
+    {
+      "pos": 5,
+      "titolo": "SCROOGE E GLI SPIRITI DEL NATALE (EBENEZER)",
+      "prima_programmazione": "12/11/2026",
+      "nazione": "USA",
+      "distribuzione": "EAGLE PICTURES",
+      "incasso_eur": 79013.0,
+      "presenze": 10436,
+      "incasso_totale_eur": 4711844.0,
+      "presenze_totale": 608535
+    },
+    {
+      "pos": 6,
+      "titolo": "LORENZO - L'INCREDIBILE AVVENTURA DI JOVANOTTI",
+      "prima_programmazione": "26/11/2026",
+      "nazione": "ITA",
+      "distribuzione": "PLAION PICTURES",
+      "incasso_eur": 75968.0,
+      "presenze": 7801,
+      "incasso_totale_eur": 83403.0,
+      "presenze_totale": 9311
+    },
+    {
+      "pos": 7,
+      "titolo": "HEXE: IL REGNO DELLE STREGHE",
+      "prima_programmazione": "26/11/2026",
+      "nazione": "USA",
+      "distribuzione": "WALT DISNEY S.M.P. ITALIA",
+      "incasso_eur": 70563.0,
+      "presenze": 9760,
+      "incasso_totale_eur": 70563.0,
+      "presenze_totale": 9760
+    },
+    {
+      "pos": 8,
+      "titolo": "FJORD",
+      "prima_programmazione": "19/11/2026",
+      "nazione": "DNK",
+      "distribuzione": "BIM DISTRIBUZIONE",
+      "incasso_eur": 19656.0,
+      "presenze": 2980,
+      "incasso_totale_eur": 473923.0,
+      "presenze_totale": 69530
+    },
+    {
+      "pos": 9,
+      "titolo": "IL FUOCO CHE TI PORTI DENTRO",
+      "prima_programmazione": "19/11/2026",
+      "nazione": "ITA",
+      "distribuzione": "01 DISTRIBUTION",
+      "incasso_eur": 19111.0,
+      "presenze": 3068,
+      "incasso_totale_eur": 357811.0,
+      "presenze_totale": 52001
+    },
+    {
+      "pos": 10,
+      "titolo": "WILD HORSE NINE",
+      "prima_programmazione": "05/11/2026",
+      "nazione": "USA",
+      "distribuzione": "WALT DISNEY S.M.P. ITALIA",
+      "incasso_eur": 18141.0,
+      "presenze": 2493,
+      "incasso_totale_eur": 2672795.0,
+      "presenze_totale": 362734
+    }
+  ]
+}
